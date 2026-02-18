@@ -1,3 +1,11 @@
+import Navbar from "@/components/layout/Navbar";
+import TopBar from "@/components/layout/TopBar";
+
 export default function Home() {
-  return <h1>Welcome to Alldelite</h1>;
+  return (
+    <>
+      <TopBar />
+      <Navbar />
+    </>
+  );
 }
