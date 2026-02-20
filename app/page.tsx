@@ -4,6 +4,7 @@ import FeaturedProductSection from "@/components/sections/FeaturedProductSection
 import HeroSection from "@/components/sections/HeroSection";
 import ImpactSection from "@/components/sections/ImpactSection";
 import IndustrySolutionsSection from "@/components/sections/IndustrySolutionsSection";
+import ProductsSection from "@/components/sections/ProductsSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <ImpactSection />
         <IndustrySolutionsSection />
         <FeaturedProductSection />
+        <ProductsSection />
       </main>
     </>
   );
