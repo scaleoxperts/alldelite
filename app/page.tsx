@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import TopBar from "@/components/layout/TopBar";
 import FeaturedProductSection from "@/components/sections/FeaturedProductSection";
 import HeroSection from "@/components/sections/HeroSection";
+import ImpactSection from "@/components/sections/ImpactSection";
 import IndustrySolutionsSection from "@/components/sections/IndustrySolutionsSection";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
+        <ImpactSection />
         <IndustrySolutionsSection />
         <FeaturedProductSection />
       </main>

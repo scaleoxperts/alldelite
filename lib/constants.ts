@@ -23,13 +23,33 @@ export const HERO_STATS = [
   },
 ] as const;
 
+export const IMPACT_METRICS = [
+  {
+    icon: "water_drop",
+    value: "1,102,531,985.60",
+    label: "Hot Water Generated",
+    unit: "in Liters",
+  },
+  {
+    icon: "bolt",
+    value: "39,888,115.60",
+    label: "Energy Saved",
+    unit: "Kilowatt Hours (kWh)",
+  },
+  {
+    icon: "eco",
+    value: "30,589,112",
+    label: "Carbon Offset",
+    unit: "in Kilograms",
+  },
+] as const;
+
 export const INDUSTRY_SOLUTIONS = [
   {
     title: "Builders & Developers",
     description:
       "Integrate cutting-edge climate control systems that enhance property value and accelerate green building certifications.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD1v_aeN_CbtusbnH7ZfWqBBoOYdnoSRo8He6-tvq540INCbBwQz4M9_ZOl6W3Gf_KowtWQwUkN1APcDWPQjOgKv7w9z8jwiraxStX3BeF3Om2l2GxEvwomTUyV4kfbSLQjKin1iy1vcCHRnQWk1AdZDY2TzYjPJ24ja0qjVfG4n7CxdpqGx4A4uP-88eg4XxVuBEe-g1Ia9sqmKu4HA50ewHoGKu8x88Q1OGFAdEZmEMCkOZ0dLE-fMVS4HqCPi5uFS8N-H7fjafc",
+    image: "/landing/impact-1.png",
     imageAlt: "Construction site building",
     icon: "apartment",
     iconBg: "bg-gradient-accent-primary",
@@ -39,15 +59,15 @@ export const INDUSTRY_SOLUTIONS = [
       "Installation Timeline Coordination",
     ],
     cta: "Get Builder Pricing",
-    ctaClass: "bg-gradient-accent-primary hover:bg-(--color-primary-dark)",
+    ctaClass:
+      "bg-gradient-accent-primary hover:bg-(--color-primary-dark) shadow-[0_0_30px_rgba(0,182,122,0.45)]",
     checkClass: "text-(--color-primary)",
   },
   {
     title: "Hotels & Villas",
     description:
       "Deliver exceptional guest comfort while dramatically reducing energy costs with whisper-quiet, efficient systems.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCJ4YBlpNlaqROps7QEYKnCqIPyF92KKZgJxYp9L1STTjc7H-LyTf4AWyB__5phY23moK1JCqAQ5yBHOkIdxpgKkLz_MlAnOHDYG4nrg10wj9s2zdBC72ODHXUnsri-kN2-Ka2TgSFVbudhMWj2hyEcEuntuZgkX55xA6WXQEylSwCn73adCgxR0pqsAyBAfUig8vc2OQJmjD21BrHQH16lOr3fCcHjRClP_WRjaKJt5aga2oR6UFV13d1pBUZJefG8xs-L_n1_ffs",
+    image: "/landing/impact-2.png",
     imageAlt: "Luxury hotel exterior",
     icon: "hotel",
     iconBg: "bg-gradient-accent-blue",
@@ -58,15 +78,15 @@ export const INDUSTRY_SOLUTIONS = [
       "Dedicated Account Manager",
     ],
     cta: "Explore Hotel Solutions",
-    ctaClass: "bg-gradient-accent-blue hover:bg-blue-600",
+    ctaClass:
+      "bg-gradient-accent-blue hover:bg-blue-600 shadow-[0_0_30px_rgba(59,130,246,0.45)]",
     checkClass: "text-(--color-accent-blue)",
   },
   {
     title: "Industries & Factories",
     description:
       "Implement high performance heating system engineered to meet the rigorous demands of industrial operations.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuADlMF8ALJOfpjXvqvtCzU87uvy60nequ0JtAZZtKI-LpcgmUXJU7nfO3oCCI60gwb-Pz-npms-XlnXEo4geUjK8ZllShCg4ooGmOwP_d7jMTPZ2KjZ71CbzxbTsXroOnK9gjqvwfMpCeIz1eDHpXxc3t3AR7O5vQw1AORuVAdf-MYORROTzhxOpnJ1082aVJdiKhDUhK4DfU9F8EcZQ3NR63ivUqT5NwYH5YKQg9NLgLzNac8tOnM0llFI-cIdqu7m8Fi75QxuB7w",
+    image: "/landing/impact-3.png",
     imageAlt: "Industrial factory",
     icon: "factory",
     iconBg: "bg-gradient-accent-purple",
@@ -77,7 +97,123 @@ export const INDUSTRY_SOLUTIONS = [
       "Designed for Heavy-Duty Applications",
     ],
     cta: "Industrial Solutions",
-    ctaClass: "bg-gradient-accent-purple hover:bg-purple-600",
+    ctaClass:
+      "bg-gradient-accent-purple hover:bg-purple-600 shadow-[0_0_30px_rgba(139,92,246,0.45)]",
     checkClass: "text-(--color-accent-purple)",
   },
+] as const;
+
+export const PRODUCTS = [
+  {
+    icon: "business",
+    iconBg: "bg-gradient-accent-primary",
+    title: "Commercial Heat Pump",
+    description:
+      "Advanced scroll compressor technology with eco-friendly refrigerants, delivering reliable, high-performance heating.",
+  },
+  {
+    icon: "water_drop",
+    iconBg: "bg-gradient-accent-blue",
+    title: "Swimming Pool Heat Pumps",
+    description:
+      "Designed to heat swimming pool water efficiently using ambient air heat, these high-performance systems save energy.",
+  },
+  {
+    icon: "bolt",
+    iconBg: "bg-gradient-accent-orange",
+    title: "Ground Source Heat Pump",
+    description:
+      "Optimized for low-temperature ground source conditions, delivering efficient, reliable heating with maximum energy savings.",
+  },
+] as const;
+
+export const CASE_STUDIES = [
+  {
+    image: "/landing/case-study-1.png",
+    imageAlt: "Office Building",
+    categoryColor: "text-(--color-primary)",
+    category: "Office Complexes",
+    title: "Modern Commercial Buildings",
+    hoverText:
+      "Serving large-scale office spaces with individual zone management and smart controls.",
+  },
+  {
+    image: "/landing/case-study-2.png",
+    imageAlt: "Pool Resort",
+    categoryColor: "text-(--color-accent-blue)",
+    category: "Hospitality",
+    title: "Hotels & Resort Pools",
+    hoverText:
+      "Year-round pool heating and guest comfort with minimal operational noise.",
+  },
+  {
+    image: "/landing/case-study-3.png",
+    imageAlt: "Engineer",
+    categoryColor: "text-yellow-500",
+    category: "Professional Service",
+    title: "Expert Installation",
+    hoverText:
+      "Certified technicians ensure optimal performance and system longevity.",
+  },
+] as const;
+
+export const WHY_US = [
+  {
+    icon: "verified",
+    iconBg: "bg-gradient-accent-primary",
+    title: "Industry Expertise",
+    description:
+      "25+ years of industrial legacy with 15+ years specializing in commercial and renewable heat pump solutions.",
+  },
+  {
+    icon: "shield",
+    iconBg: "bg-gradient-accent-blue",
+    title: "Comprehensive Warranty",
+    description:
+      "Engineered with world-class scroll compressors and corrosion-resistant components for long-term performance.",
+  },
+  {
+    icon: "group",
+    iconBg: "bg-gradient-accent-purple",
+    title: "Dedicated Support Team",
+    description:
+      "On-ground service support in Chennai and Hyderabad ensuring fast response and reliable after-sales assistance.",
+  },
+  {
+    icon: "build",
+    iconBg: "bg-gradient-accent-orange",
+    title: "Turnkey Installation",
+    description:
+      "End-to-end heat pump solutions — from system design and selection to installation and commissioning.",
+  },
+  {
+    icon: "trending_up",
+    iconBg: "bg-gradient-accent-primary",
+    title: "Proven ROI",
+    description:
+      "Up to 3-4.5x heat output per unit of electricity, delivering measurable energy savings and faster payback.",
+  },
+  {
+    icon: "schedule",
+    iconBg: "bg-gradient-accent-blue",
+    title: "Fast Deployment",
+    description:
+      "Efficient system integration designed for quick installation with minimal operational disruption.",
+  },
+] as const;
+
+export const FOOTER_QUICK_LINKS = [
+  "Solutions",
+  "Industries",
+  "Products",
+  "About Us",
+  "Contact",
+] as const;
+
+export const FOOTER_PRODUCTS = [
+  "Commercial Heat Pumps",
+  "Pool Heat Pumps",
+  "Ground Source Systems",
+  "Air Source Heat Pumps",
+  "Custom Solutions",
 ] as const;
