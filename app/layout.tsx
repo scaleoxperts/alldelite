@@ -1,21 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Alldelite",
-  description: "Welcome to Alldelite",
+  title: "Alldelite - Industrial Energy Solutions",
+  description:
+    "A Trusted Leader in Sustainable Heating & Renewable Energy Solutions for commercial buildings, hospitality and businesses.",
 };
 
 export default function RootLayout({
@@ -25,8 +23,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+          rel="stylesheet"
+        />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} font-body bg-background-light dark:bg-background-dark text-gray-900 transition-colors duration-200 dark:text-gray-100`}
       >
         {children}
       </body>

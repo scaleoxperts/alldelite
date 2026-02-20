@@ -1,6 +1,54 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-secondary: #101828;
+  --color-background-light: #f9fafb;
+  --color-background-dark: #0b1120;
+  --color-surface-dark: #1f2937;
+
+  --color-primary: #00b67a;
+  --color-primary-dark: #009462;
+  --color-accent-blue: #3b82f6;
+  --color-accent-purple: #8b5cf6;
+  --color-accent-orange: #f97316;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.bg-gradient-accent-primary {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 182, 122, 1) 55%,
+    rgba(0, 152, 102, 1) 100%
+  );
+}
+
+.bg-gradient-accent-blue {
+  background: linear-gradient(
+    90deg,
+    rgba(59, 130, 246, 1) 27%,
+    rgba(28, 93, 252, 1) 100%
+  );
+}
+
+.bg-gradient-accent-purple {
+  background: linear-gradient(
+    90deg,
+    rgba(139, 92, 246, 1) 55%,
+    rgba(126, 39, 254, 1) 90%
+  );
+}
+
+.bg-gradient-accent-orange {
+  background: linear-gradient(
+    90deg,
+    rgba(249, 115, 22, 1) 55%,
+    rgba(246, 79, 0, 1) 90%
+  );
 }
