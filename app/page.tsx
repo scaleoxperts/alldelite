@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import TopBar from "@/components/layout/TopBar";
 import CaseStudiesSection from "@/components/sections/CaseStudiesSection";
@@ -23,6 +24,7 @@ export default function Home() {
         <CaseStudiesSection />
         <WhyUsSection />
         <ContactSection />
+        <Footer />
       </main>
     </>
   );
