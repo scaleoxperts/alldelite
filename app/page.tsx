@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import TopBar from "@/components/layout/TopBar";
 import CaseStudiesSection from "@/components/sections/CaseStudiesSection";
+import ContactSection from "@/components/sections/ContactSection";
 import FeaturedProductSection from "@/components/sections/FeaturedProductSection";
 import HeroSection from "@/components/sections/HeroSection";
 import ImpactSection from "@/components/sections/ImpactSection";
@@ -21,6 +22,7 @@ export default function Home() {
         <ProductsSection />
         <CaseStudiesSection />
         <WhyUsSection />
+        <ContactSection />
       </main>
     </>
   );
