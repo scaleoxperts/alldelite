@@ -86,25 +86,6 @@ export default function FeaturedProductSection() {
               ))}
             </ul>
 
-            <div className="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {SPEC_CARDS.map((card) => (
-                <div
-                  key={card.title}
-                  className="flex items-center gap-4 rounded-xl bg-emerald-50 p-4"
-                >
-                  <span className="material-icons-outlined text-2xl text-emerald-600">
-                    {card.icon}
-                  </span>
-                  <div>
-                    <div className="text-sm font-semibold text-gray-900">
-                      {card.title}
-                    </div>
-                    <div className="text-xs text-gray-600">{card.subtitle}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
             <div className="flex flex-col gap-4 sm:flex-row">
               <a
                 href="#"
