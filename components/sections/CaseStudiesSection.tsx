@@ -4,7 +4,7 @@ import { CASE_STUDIES } from "@/lib/constants";
 
 export default function CaseStudiesSection() {
   return (
-    <section className="bg-(--color-background-dark) py-28 text-white">
+    <section className="bg-case-studies py-28 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-20 text-center">
           <span className="mb-6 inline-block rounded-full border border-(--color-primary) bg-(--color-primary)/20 px-4 py-1.5 text-xs font-semibold tracking-widest text-(--color-primary) uppercase">

@@ -52,3 +52,12 @@ body {
     rgba(246, 79, 0, 1) 90%
   );
 }
+
+.bg-case-studies {
+  background: #222c3e;
+  background: linear-gradient(
+    60deg,
+    rgba(34, 44, 62, 1) 19%,
+    rgba(22, 29, 47, 1) 54%
+  );
+}
