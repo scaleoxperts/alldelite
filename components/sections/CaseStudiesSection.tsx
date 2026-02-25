@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { CASE_STUDIES } from "@/lib/constants";
+import { CASE_STUDIES } from "@/contents/landing";
 
 export default function CaseStudiesSection() {
   return (

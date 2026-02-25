@@ -1,4 +1,4 @@
-import { PRODUCTS } from "@/lib/constants";
+import { PRODUCTS } from "@/contents/landing";
 
 export default function ProductsSection() {
   return (

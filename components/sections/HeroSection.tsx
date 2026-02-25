@@ -1,4 +1,4 @@
-import { HERO_STATS } from "@/lib/constants";
+import { HERO_STATS } from "@/contents/landing";
 
 export default function HeroSection() {
   return (

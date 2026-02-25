@@ -1,4 +1,4 @@
-import { IMPACT_METRICS } from "@/lib/constants";
+import { IMPACT_METRICS } from "@/contents/landing";
 
 export default function ImpactSection() {
   return (

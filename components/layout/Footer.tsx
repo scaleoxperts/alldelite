@@ -2,7 +2,7 @@ import {
   FOOTER_PRODUCTS,
   FOOTER_QUICK_LINKS,
   SITE_CONFIG,
-} from "@/lib/constants";
+} from "@/contents/constants";
 
 export default function Footer() {
   return (

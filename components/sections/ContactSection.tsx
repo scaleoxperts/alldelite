@@ -1,6 +1,6 @@
 "use client";
 
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG } from "@/contents/constants";
 
 const CONTACT_INFO = [
   {

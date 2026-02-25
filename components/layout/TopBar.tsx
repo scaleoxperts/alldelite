@@ -1,4 +1,4 @@
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG } from "@/contents/constants";
 
 export default function TopBar() {
   return (

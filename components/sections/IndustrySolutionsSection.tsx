@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { INDUSTRY_SOLUTIONS } from "@/lib/constants";
+import { INDUSTRY_SOLUTIONS } from "@/contents/landing";
 
 import Capsule from "../shared/Capsule";
 

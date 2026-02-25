@@ -1,4 +1,5 @@
-import { SITE_CONFIG, WHY_US } from "@/lib/constants";
+import { SITE_CONFIG } from "@/contents/constants";
+import { WHY_US } from "@/contents/landing";
 
 export default function WhyUsSection() {
   return (
