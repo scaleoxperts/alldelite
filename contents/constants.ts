@@ -9,7 +9,7 @@ export const NAV_LINKS = [
   { label: "Solutions", href: "/solutions" },
   { label: "Industries", href: "#" },
   { label: "Products", href: "#" },
-  { label: "About Us", href: "#" },
+  { label: "About Us", href: "/about" },
 ] as const;
 
 export const FOOTER_QUICK_LINKS = [
