@@ -11,6 +11,9 @@
   --color-accent-blue: #3b82f6;
   --color-accent-purple: #8b5cf6;
   --color-accent-orange: #f97316;
+  --color-text-black: #161d2e;
+  --color-text-white: #ffffff;
+  --color-text-gray: #425962;
 }
 
 html {
@@ -59,5 +62,14 @@ body {
     60deg,
     rgba(34, 44, 62, 1) 19%,
     rgba(22, 29, 47, 1) 54%
+  );
+}
+
+.bg-solutions-sustainability {
+  background: #00aa71;
+  background: radial-gradient(
+    circle,
+    rgba(0, 170, 113, 1) 63%,
+    rgba(6, 154, 104, 1) 92%
   );
 }
