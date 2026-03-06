@@ -1,5 +1,5 @@
 export const ABOUT_HERO = {
-  badge: "Welcome",
+  badge: "About Us",
   heading: "Alldelite Heat Pumps Limited",
   description:
     "Pioneering high-efficiency, low-carbon heat pump technology since 1999.",
@@ -96,10 +96,10 @@ export const USAGE = {
     {
       iconKey: "building",
       label: "Commercial",
-      color: "text-(--color-primary)",
+      color: "text-white",
     },
-    { iconKey: "briefcase", label: "Institutional", color: "text-blue-400" },
-    { iconKey: "users", label: "Industrial", color: "text-purple-400" },
+    { iconKey: "briefcase", label: "Institutional", color: "text-white" },
+    { iconKey: "users", label: "Industrial", color: "text-white" },
   ],
 } as const;
 
