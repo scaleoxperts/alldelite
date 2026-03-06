@@ -64,7 +64,7 @@ export default function IndustrySolutionsSection() {
                 </ul>
                 <a
                   className={`${solution.ctaClass} block rounded-lg py-3 text-center text-sm font-medium text-white transition`}
-                  href="#"
+                  href="/contact"
                 >
                   {solution.cta}
                   <span className="material-icons-outlined ml-1 align-middle text-sm">

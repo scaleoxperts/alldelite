@@ -88,13 +88,13 @@ export default function FeaturedProductSection() {
 
             <div className="flex flex-col gap-4 sm:flex-row">
               <a
-                href="#"
+                href="/contact"
                 className="rounded-xl bg-emerald-500 px-6 py-3 text-center text-sm font-semibold text-white shadow transition hover:bg-emerald-600"
               >
                 Request Technical Specs
               </a>
               <a
-                href="#"
+                href="/contact"
                 className="flex items-center justify-center gap-2 rounded-xl border border-gray-300 px-6 py-3 text-sm font-semibold text-gray-700 transition hover:bg-gray-50"
               >
                 <span className="material-icons-outlined text-emerald-500">

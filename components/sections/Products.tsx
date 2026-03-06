@@ -25,7 +25,7 @@ export default function ProductsSection() {
               </p>
               <a
                 className="flex items-center text-sm font-bold text-(--color-primary) group-hover:underline"
-                href="#"
+                href="/contact"
               >
                 Learn More
                 <span className="material-icons-outlined ml-1 text-sm">

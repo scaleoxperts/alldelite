@@ -54,13 +54,13 @@ export default function WhyUsSection() {
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <a
                 className="rounded-lg bg-(--color-primary) px-8 py-3 font-medium text-white transition hover:bg-(--color-primary-dark)"
-                href="#"
+                href="/contact"
               >
                 Get Custom Quote
               </a>
               <a
                 className="flex items-center justify-center gap-2 rounded-lg border border-gray-700 bg-gray-800 px-8 py-3 font-medium text-white transition hover:bg-gray-700"
-                href="#"
+                href="/contact"
               >
                 <span className="material-icons-outlined text-sm">call</span>{" "}
                 {SITE_CONFIG.phone}

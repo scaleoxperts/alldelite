@@ -45,7 +45,7 @@ export default function HeroSection() {
             <div className="flex flex-col gap-4 sm:flex-row">
               <a
                 className="flex items-center justify-center rounded-lg bg-(--color-primary) px-8 py-4 font-semibold text-white transition hover:bg-(--color-primary-dark)"
-                href="#"
+                href="/contact"
               >
                 Request Custom Quote
                 <span className="material-icons-outlined ml-2 text-lg">
@@ -54,7 +54,7 @@ export default function HeroSection() {
               </a>
               <a
                 className="flex items-center justify-center rounded-lg border border-gray-700 bg-gray-800 px-8 py-4 font-semibold text-white transition hover:bg-gray-700"
-                href="#"
+                href="/contact"
               >
                 Schedule Site Visit
               </a>

@@ -74,7 +74,7 @@ export default function HeroSection() {
                 </ul>
 
                 <a
-                  href="#"
+                  href="/contact"
                   className={`${card.ctaBg} mt-auto block rounded-md py-3 text-center text-sm font-semibold text-white transition`}
                 >
                   Request Quote
