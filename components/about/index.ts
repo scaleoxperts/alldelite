@@ -1,0 +1,11 @@
+export { default as HeroSection } from "./Hero.about";
+export { default as WhoAreWeSection } from "./WhoAreWe.about";
+export { default as MissionSection } from "./Mission.about";
+export { default as TechnologySection } from "./Technology.about";
+export { default as HowItWorksSection } from "./HowItWorks.about";
+export { default as MultiBenHybridSection } from "./MultiBenHybrid.about";
+export { default as UniquenessSection } from "./Uniqueness.about";
+export { default as UsageSection } from "./Usage.about";
+export { default as ProductRangeSection } from "./ProductRange.about";
+export { default as LocationSection } from "./Location.about";
+export { default as CTASection } from "./CTA.about";
