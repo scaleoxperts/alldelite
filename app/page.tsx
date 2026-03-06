@@ -1,14 +1,16 @@
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import TopBar from "@/components/layout/TopBar";
-import CaseStudiesSection from "@/components/sections/CaseStudiesSection";
-import ContactSection from "@/components/sections/ContactSection";
-import FeaturedProductSection from "@/components/sections/FeaturedProductSection";
-import HeroSection from "@/components/sections/HeroSection";
-import ImpactSection from "@/components/sections/ImpactSection";
-import IndustrySolutionsSection from "@/components/sections/IndustrySolutionsSection";
-import ProductsSection from "@/components/sections/ProductsSection";
-import WhyUsSection from "@/components/sections/WhyUsSection";
+import {
+  CaseStudiesSection,
+  ContactSection,
+  FeaturedProductSection,
+  HeroSection,
+  ImpactSection,
+  IndustrySolutionsSection,
+  ProductsSection,
+  WhyUsSection,
+} from "@/components/sections";
 
 export default function Home() {
   return (
