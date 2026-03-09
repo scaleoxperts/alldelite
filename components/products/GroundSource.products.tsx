@@ -55,9 +55,9 @@ export default function GroundSourceSection() {
             </div>
           </div>
 
-          <div className="min-h-100">
+          <div className="h-180">
             <img
-              src="https://placehold.co/700x600/8b7355/ffffff?text=Ground+Source+Installation"
+              src="/products/ground-source-system.png"
               alt="Ground Source Heat Pump Installation"
               className="h-full w-full object-cover"
             />

@@ -87,8 +87,7 @@ export default function SwimmingPoolSection() {
             <div
               className="flex h-96 flex-col justify-between rounded-3xl bg-cover bg-center shadow-2xl"
               style={{
-                backgroundImage:
-                  "url('https://placehold.co/600x480/0ea5e9/ffffff?text=Swimming+Pool')",
+                backgroundImage: "url('/products/swimming-pool.png')",
               }}
             >
               <div className="flex h-full items-end justify-evenly gap-4 p-6">

@@ -17,8 +17,7 @@ export const INDUSTRIES_HERO = {
 
 export const INDUSTRY_CARDS = [
   {
-    image:
-      "https://placehold.co/400x200/e0e0e0/808080?text=Builders+%26+Developers",
+    image: "/landing/impact-3.png",
     imageAlt: "Builders & Developers",
     icon: Building,
     iconBg: "bg-(--color-primary)",
@@ -35,7 +34,7 @@ export const INDUSTRY_CARDS = [
     checkColor: "text-(--color-primary)",
   },
   {
-    image: "https://placehold.co/400x200/e0e0e0/808080?text=Hotels+%26+Villas",
+    image: "/landing/impact-1.png",
     imageAlt: "Hotels & Villas",
     icon: Hotel,
     iconBg: "bg-(--color-accent-blue)",
@@ -53,8 +52,7 @@ export const INDUSTRY_CARDS = [
     checkColor: "text-(--color-primary)",
   },
   {
-    image:
-      "https://placehold.co/400x200/e0e0e0/808080?text=Industries+%26+Factories",
+    image: "/industries/industries-hero-3.png",
     imageAlt: "Industries & Factories",
     icon: Factory,
     iconBg: "bg-(--color-accent-purple)",
