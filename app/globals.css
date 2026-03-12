@@ -77,8 +77,7 @@ body {
 .bg-products-hero {
   background:
     linear-gradient(rgba(18, 28, 38, 0.85), rgba(18, 28, 38, 0.85)),
-    url("https://placehold.co/1920x600/121c26/333333?text=Industrial+Background")
-      center / cover;
+    url("/products/hero-image.png") center / cover;
   background-color: #121c26;
 }
 

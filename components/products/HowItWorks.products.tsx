@@ -34,7 +34,7 @@ export default function HowItWorksSection() {
 
         <div className="overflow-hidden rounded-2xl bg-white p-6">
           <img
-            src="https://placehold.co/1000x500/fafac8/333333?text=How+a+Heat+Pump+Works+Diagram"
+            src="/products/heat-pump-cycle.gif"
             alt=" Heat Pump Cycle Diagram"
             className="mx-auto w-full max-w-4xl rounded-xl"
           />
