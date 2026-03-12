@@ -63,7 +63,7 @@ export const INDUSTRY_SOLUTIONS = [
       "24/7 Priority Maintenance",
       "Dedicated Account Manager",
     ],
-    cta: "Explore Hotel Solutions",
+    cta: "Get Hotel Pricing",
     ctaClass:
       "bg-gradient-accent-blue hover:bg-blue-600 shadow-[0_0_30px_rgba(59,130,246,0.45)]",
     checkClass: "text-(--color-accent-blue)",
@@ -82,7 +82,7 @@ export const INDUSTRY_SOLUTIONS = [
       "Continuous Industrial Hot Water Supply",
       "Designed for Heavy-Duty Applications",
     ],
-    cta: "Industrial Solutions",
+    cta: "Get Industrial Pricing",
     ctaClass:
       "bg-gradient-accent-purple hover:bg-purple-600 shadow-[0_0_30px_rgba(139,92,246,0.45)]",
     checkClass: "text-(--color-accent-purple)",

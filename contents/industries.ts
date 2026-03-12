@@ -17,7 +17,7 @@ export const INDUSTRIES_HERO = {
 
 export const INDUSTRY_CARDS = [
   {
-    image: "/landing/impact-3.png",
+    image: "/landing/impact-1.png",
     imageAlt: "Builders & Developers",
     icon: Building,
     iconBg: "bg-(--color-primary)",
@@ -34,7 +34,7 @@ export const INDUSTRY_CARDS = [
     checkColor: "text-(--color-primary)",
   },
   {
-    image: "/landing/impact-1.png",
+    image: "/landing/impact-2.png",
     imageAlt: "Hotels & Villas",
     icon: Hotel,
     iconBg: "bg-(--color-accent-blue)",
@@ -52,7 +52,7 @@ export const INDUSTRY_CARDS = [
     checkColor: "text-(--color-primary)",
   },
   {
-    image: "/industries/industries-hero-3.png",
+    image: "/landing/impact-3.png",
     imageAlt: "Industries & Factories",
     icon: Factory,
     iconBg: "bg-(--color-accent-purple)",
