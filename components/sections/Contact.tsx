@@ -1,5 +1,9 @@
 "use client";
 
+import { useState } from "react";
+
+import { useRouter } from "next/navigation";
+
 import { SITE_CONFIG } from "@/contents/constants";
 
 const CONTACT_INFO = [
@@ -26,7 +30,78 @@ const CONTACT_INFO = [
   },
 ];
 
+type FormState = {
+  name: string;
+  email: string;
+  phone: string;
+  company: string;
+  industry: string;
+  message: string;
+};
+
+const INITIAL_FORM: FormState = {
+  name: "",
+  email: "",
+  phone: "",
+  company: "",
+  industry: "",
+  message: "",
+};
+
 export default function ContactSection() {
+  const router = useRouter();
+  const [form, setForm] = useState<FormState>(INITIAL_FORM);
+  const [submitting, setSubmitting] = useState(false);
+  const [successMsg, setSuccessMsg] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const onChange =
+    (key: keyof FormState) =>
+    (
+      e: React.ChangeEvent<
+        HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+      >
+    ) => {
+      setForm((prev) => ({ ...prev, [key]: e.target.value }));
+    };
+
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSuccessMsg("");
+    setErrorMsg("");
+    setSubmitting(true);
+
+    try {
+      const res = await fetch("/api/save-form", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      const result = await res.json();
+
+      if (!res.ok || !result?.success) {
+        setErrorMsg(
+          result?.error ? JSON.stringify(result.error) : "Submission failed"
+        );
+        return;
+      }
+
+      setSuccessMsg("Inquiry sent successfully.");
+      setForm(INITIAL_FORM);
+
+      const params = new URLSearchParams({
+        name: form.name,
+        email: form.email,
+      });
+      router.push(`/thank-you?${params.toString()}`);
+    } catch {
+      setErrorMsg("Network error. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
     <section className="bg-(--color-background-light) py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -73,7 +148,7 @@ export default function ContactSection() {
           </div>
 
           <div className="rounded-3xl border border-gray-100 bg-white p-8 shadow-lg lg:col-span-2 lg:p-10">
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={onSubmit}>
               <div className="grid gap-6 md:grid-cols-2">
                 <div>
                   <label className="mb-1 block text-sm font-medium text-gray-700">
@@ -81,6 +156,9 @@ export default function ContactSection() {
                   </label>
                   <input
                     type="text"
+                    required
+                    value={form.name}
+                    onChange={onChange("name")}
                     placeholder="John Smith"
                     className="w-full rounded-lg border-gray-300 bg-white px-4 py-3 text-gray-900 shadow-sm focus:border-(--color-primary) focus:ring-(--color-primary)"
                   />
@@ -92,6 +170,9 @@ export default function ContactSection() {
                   </label>
                   <input
                     type="email"
+                    required
+                    value={form.email}
+                    onChange={onChange("email")}
                     placeholder="john@company.com"
                     className="w-full rounded-lg border-gray-300 bg-white px-4 py-3 text-gray-900 shadow-sm focus:border-(--color-primary) focus:ring-(--color-primary)"
                   />
@@ -105,6 +186,11 @@ export default function ContactSection() {
                   </label>
                   <input
                     type="tel"
+                    required
+                    minLength={10}
+                    maxLength={15}
+                    value={form.phone}
+                    onChange={onChange("phone")}
                     placeholder="+91 98765 43210"
                     className="w-full rounded-lg border-gray-300 bg-white px-4 py-3 text-gray-900 shadow-sm focus:border-(--color-primary) focus:ring-(--color-primary)"
                   />
@@ -116,6 +202,9 @@ export default function ContactSection() {
                   </label>
                   <input
                     type="text"
+                    required
+                    value={form.company}
+                    onChange={onChange("company")}
                     placeholder="Your Company"
                     className="w-full rounded-lg border-gray-300 bg-white px-4 py-3 text-gray-900 shadow-sm focus:border-(--color-primary) focus:ring-(--color-primary)"
                   />
@@ -126,35 +215,58 @@ export default function ContactSection() {
                 <label className="mb-1 block text-sm font-medium text-gray-700">
                   Industry / Project Type *
                 </label>
-                <select className="w-full rounded-lg border-gray-300 bg-white px-4 py-3 text-gray-900 shadow-sm focus:border-(--color-primary) focus:ring-(--color-primary)">
-                  <option>Select an industry...</option>
-                  <option>Hospitality (Hotel/Resort)</option>
-                  <option>Construction / Real Estate</option>
-                  <option>Industrial Manufacturing</option>
-                  <option>Other</option>
+                <select
+                  required
+                  value={form.industry}
+                  onChange={onChange("industry")}
+                  className="w-full rounded-lg border-gray-300 bg-white px-4 py-3 text-gray-900 shadow-sm focus:border-(--color-primary) focus:ring-(--color-primary)"
+                >
+                  <option value="">Select an industry...</option>
+                  <option value="Hospitality (Hotel/Resort)">
+                    Hospitality (Hotel/Resort)
+                  </option>
+                  <option value="Construction / Real Estate">
+                    Construction / Real Estate
+                  </option>
+                  <option value="Industrial Manufacturing">
+                    Industrial Manufacturing
+                  </option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
 
               <div>
                 <label className="mb-1 block text-sm font-medium text-gray-700">
-                  Project Details / Message *
+                  Project Details / Message
                 </label>
                 <textarea
                   rows={4}
+                  value={form.message}
+                  onChange={onChange("message")}
                   placeholder="Tell us about your project requirements, building size, timeline, etc."
                   className="w-full rounded-lg border-gray-300 bg-white px-4 py-3 text-gray-900 shadow-sm focus:border-(--color-primary) focus:ring-(--color-primary)"
                 />
               </div>
 
               <button
-                type="button"
-                className="flex w-full items-center justify-center rounded-lg bg-(--color-primary) py-3.5 font-bold text-white shadow-lg transition hover:bg-(--color-primary-dark)"
+                type="submit"
+                disabled={submitting}
+                className="flex w-full items-center justify-center rounded-lg bg-(--color-primary) py-3.5 font-bold text-white shadow-lg transition hover:bg-(--color-primary-dark) disabled:cursor-not-allowed disabled:opacity-70"
               >
-                Send Inquiry
+                {submitting ? "Sending..." : "Send Inquiry"}
                 <span className="material-icons-outlined ml-2 text-sm">
                   send
                 </span>
               </button>
+
+              {successMsg && (
+                <p className="text-center text-sm text-green-600">
+                  {successMsg}
+                </p>
+              )}
+              {errorMsg && (
+                <p className="text-center text-sm text-red-600">{errorMsg}</p>
+              )}
 
               <p className="mt-4 text-center text-xs text-gray-500">
                 By submitting this form, you agree to our privacy policy. We
