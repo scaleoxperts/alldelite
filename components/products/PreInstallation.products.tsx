@@ -4,7 +4,6 @@ export default function PreInstallationSection() {
   return (
     <section className="bg-(--color-background-light) py-20">
       <div className="mx-auto max-w-7xl px-5">
-        {/* Centered header */}
         <div className="mb-10 text-center">
           <span className="mb-4 inline-block rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold tracking-wide text-blue-500 uppercase">
             {PRE_INSTALLATION.badge}
@@ -17,7 +16,6 @@ export default function PreInstallationSection() {
           </p>
         </div>
 
-        {/* Guidelines grid */}
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {PRE_INSTALLATION.guidelines.map((guide) => (
             <div
@@ -39,7 +37,6 @@ export default function PreInstallationSection() {
           ))}
         </div>
 
-        {/* Alert box */}
         <div className="mt-8 flex items-center gap-4 rounded-lg border-l-6 border-orange-400 bg-orange-50 p-5 text-orange-700">
           <PRE_INSTALLATION.alert.Icon className="bg-gradient-accent-orange h-8 w-8 shrink-0 rounded-lg p-2 text-white" />
           <p className="flex flex-col justify-between text-sm">

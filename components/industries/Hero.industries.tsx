@@ -19,14 +19,12 @@ export default function HeroSection() {
           {INDUSTRIES_HERO.description}
         </p>
 
-        {/* Industry Cards */}
         <div className="grid gap-8 md:grid-cols-3">
           {INDUSTRY_CARDS.map((card) => (
             <div
               key={card.title}
               className="flex flex-col overflow-hidden rounded-xl bg-white text-left shadow-md transition-shadow hover:shadow-lg"
             >
-              {/* Card Image */}
               <div className="relative h-50">
                 <Image
                   src={card.image}
@@ -35,7 +33,7 @@ export default function HeroSection() {
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
-                {/* Overlapping icon badge */}
+
                 <div
                   className={`${card.iconBg} absolute -bottom-7.5 left-5 flex h-15 w-15 items-center justify-center rounded-full text-white shadow-lg`}
                 >
@@ -45,7 +43,6 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* Card Content */}
               <div className="flex grow flex-col px-10 pt-10 pb-6">
                 <h3 className="mb-3 text-[22px] font-bold text-gray-900">
                   {card.title}
