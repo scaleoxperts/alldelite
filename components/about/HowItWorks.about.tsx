@@ -1,21 +1,40 @@
-import { HOW_IT_WORKS } from "@/contents/about";
+import Capsule from "../shared/Capsule";
 
 export default function HowItWorksSection() {
   return (
-    <section className="bg-white py-24">
-      <div className="mx-auto max-w-4xl px-6 text-center">
-        <h2 className="mb-12 text-4xl font-bold text-(--color-text-black)">
-          {HOW_IT_WORKS.heading}
-        </h2>
-        <div className="rounded-3xl border border-gray-100 bg-(--color-background-light) p-10 shadow-xl">
-          <p className="text-lg leading-relaxed text-(--color-text-gray)">
-            MULTIBEN Heat Pumps extract heat from the surrounding air, compress
-            it, and transfer it to water - a process similar to refrigeration
-            but used for heating rather than cooling. This is an effective
-            solution that has been in use for many years and is known for its
-            <br />
-            <b>high performance and reliability</b>.
+    <section className="bg-[#f5faf8] py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="mb-12 text-center">
+          <Capsule text="How It Works" />
+          <h2 className="mt-3 text-4xl font-bold text-[#0d1b2a] md:text-5xl">
+            How Do Heat Pumps Work?
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-[#425962]">
+            Heat Pumps work by effectively transferring the heat to and from the
+            freely available ambient air, water and Earth.
           </p>
+        </div>
+
+        <div className="mx-auto max-w-4xl overflow-hidden rounded-3xl bg-[#0d2626] p-8 shadow-2xl md:p-12">
+          <div className="mb-6 text-center">
+            <span className="text-2xl font-bold text-white">SK Alldelite</span>
+            <div className="mt-1 text-lg font-semibold tracking-wide">
+              <span className="text-[#3b82f6]">MULTI</span>
+              <span className="text-[#ef4444]">BEN</span>
+              <span className="text-white"> HEAT PUMPS</span>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-2xl bg-[#f9f3e0] p-4">
+            <div className="mb-3 text-center text-sm font-bold text-[#0d2626]">
+              How a Heat Pump Works
+            </div>
+            <img
+              src="https://placehold.co/800x400/f9f3e0/1a2e2e?text=Heat+Pump+Diagram+(Compressor+%7C+Evaporator+%7C+Condenser+%7C+Expansion+Valve)"
+              alt="How a Heat Pump Works"
+              className="h-auto w-full rounded-xl"
+            />
+          </div>
         </div>
       </div>
     </section>
