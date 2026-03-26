@@ -1,65 +1,97 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import Capsule from "../shared/Capsule";
 
-import { LOCATION } from "@/contents/about";
-import { SITE_CONFIG } from "@/contents/constants";
+const locations = [
+  {
+    label: "Headquarters",
+    detail: (
+      <>
+        Our Head Quarters is in{" "}
+        <strong className="text-[#00a884]">Hyderabad</strong> and we are having{" "}
+        <strong className="text-[#00a884]">Pan India</strong> operation.
+      </>
+    ),
+    iconBg: "bg-[#00a884]",
+    icon: (
+      <svg
+        className="h-5 w-5 text-white"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path
+          fillRule="evenodd"
+          d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z"
+          clipRule="evenodd"
+        />
+      </svg>
+    ),
+  },
+  {
+    label: "Corporate Office",
+    detail: "Hyderabad",
+    iconBg: "bg-[#3b82f6]",
+    icon: (
+      <svg
+        className="h-5 w-5 text-white"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l1.293 1.293a1 1 0 001.414-1.414l-7-7z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Service Locations",
+    detail: "Chennai & Hyderabad",
+    iconBg: "bg-[#8b5cf6]",
+    icon: (
+      <svg
+        className="h-5 w-5 text-white"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path
+          fillRule="evenodd"
+          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+          clipRule="evenodd"
+        />
+      </svg>
+    ),
+  },
+];
 
 export default function LocationSection() {
   return (
-    <section className="bg-(--color-background-light) py-24">
+    <section className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl font-bold text-(--color-text-black)">
-            {LOCATION.heading}
+        <div className="mb-12 text-center">
+          <Capsule text="Locations" />
+          <h2 className="mt-3 text-4xl font-bold text-[#0d1b2a] md:text-5xl">
+            Where Are We Located?
           </h2>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2">
-          <div className="rounded-3xl border border-(--color-primary)/10 bg-linear-to-br from-(--color-primary)/5 to-white p-10">
-            <div className="mb-8 flex items-center gap-3">
-              <MapPin className="h-6 w-6 text-(--color-primary)" />
-              <h4 className="text-xl font-bold text-(--color-text-black)">
-                {LOCATION.address.title}
-              </h4>
-            </div>
-            <address className="space-y-2 text-gray-600 not-italic">
-              {LOCATION.address.lines.map((line) => (
-                <p key={line}>{line}</p>
-              ))}
-            </address>
-          </div>
-
-          <div className="rounded-3xl border border-gray-100 bg-white p-10 shadow-sm">
-            <h4 className="mb-8 text-xl font-bold text-(--color-text-black)">
-              {LOCATION.contact.title}
-            </h4>
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="rounded-full bg-(--color-primary)/10 p-3 text-(--color-primary)">
-                  <Phone className="h-5 w-5" />
+        <div className="mx-auto max-w-2xl">
+          <div className="overflow-hidden rounded-2xl border border-[#00a884]/15 bg-[#f0faf6]">
+            {locations.map((loc, i) => (
+              <div
+                key={loc.label}
+                className={`flex items-start gap-4 p-5 ${
+                  i !== locations.length - 1
+                    ? "border-b border-[#00a884]/10"
+                    : ""
+                }`}
+              >
+                <div
+                  className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl ${loc.iconBg}`}
+                >
+                  {loc.icon}
                 </div>
                 <div>
-                  <p className="text-xs font-bold tracking-widest text-gray-400 uppercase">
-                    Phone
-                  </p>
-                  <p className="font-medium text-(--color-text-gray)">
-                    {SITE_CONFIG.phone}
-                  </p>
+                  <h4 className="font-bold text-[#0d1b2a]">{loc.label}</h4>
+                  <p className="mt-1 text-sm text-gray-500">{loc.detail}</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="rounded-full bg-blue-50 p-3 text-blue-500">
-                  <Mail className="h-5 w-5" />
-                </div>
-                <div>
-                  <p className="text-xs font-bold tracking-widest text-gray-400 uppercase">
-                    Email
-                  </p>
-                  <p className="font-medium text-(--color-text-gray)">
-                    {SITE_CONFIG.email}
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
