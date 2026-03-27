@@ -1,53 +1,139 @@
-import { Briefcase, Building, Users } from "lucide-react";
+import Capsule from "../shared/Capsule";
 
-import { USAGE } from "@/contents/about";
-
-const ICON_MAP = {
-  building: Building,
-  briefcase: Briefcase,
-  users: Users,
-} as const;
+const applications = [
+  {
+    label: "Villas & Bungalows",
+    description: "Independent homes with efficient hot water systems.",
+    img: "https://placehold.co/600x320/1a3a3a/ffffff?text=Villas+%26+Bungalows",
+    iconBg: "bg-[#00a884]",
+    icon: (
+      <svg
+        className="h-4 w-4 text-white"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l1.293 1.293a1 1 0 001.414-1.414l-7-7z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Hotels & Hostels",
+    description: "Star hotels with centralized hot water solutions.",
+    img: "https://placehold.co/600x320/1a3a3a/ffffff?text=Hotels+%26+Hostels",
+    iconBg: "bg-[#00a884]",
+    icon: (
+      <svg
+        className="h-4 w-4 text-white"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Hospitals",
+    description: "Healthcare facilities requiring reliable hot water.",
+    img: "https://placehold.co/600x320/1a3a3a/ffffff?text=Hospitals",
+    iconBg: "bg-[#3b82f6]",
+    icon: (
+      <svg
+        className="h-4 w-4 text-white"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"
+        />
+      </svg>
+    ),
+  },
+  {
+    label: "Multi-Storied Apartments",
+    description: "Residential buildings with cost-effective systems.",
+    img: "https://placehold.co/600x320/1a3a3a/ffffff?text=Apartments",
+    iconBg: "bg-[#00a884]",
+    icon: (
+      <svg
+        className="h-4 w-4 text-white"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path d="M4 4a2 2 0 012-2h4a2 2 0 012 2v2H4V4z" />
+        <path d="M4 8h8v10H4V8z" />
+        <path d="M14 4h2a2 2 0 012 2v12a2 2 0 01-2 2h-2V4z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Factories",
+    description: "Industrial facilities with large-scale requirements.",
+    img: "https://placehold.co/600x320/1a3a3a/ffffff?text=Factories",
+    iconBg: "bg-[#00a884]",
+    icon: (
+      <svg
+        className="h-4 w-4 text-white"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path
+          fillRule="evenodd"
+          d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z"
+          clipRule="evenodd"
+        />
+      </svg>
+    ),
+  },
+];
 
 export default function UsageSection() {
   return (
-    <section className="bg-(--color-background-light) py-24">
+    <section className="bg-[#f5faf8] py-24">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl font-bold text-(--color-text-black)">
-            {USAGE.heading}
+        <div className="mb-12 text-center">
+          <Capsule text="Applications" />
+          <h2 className="mt-3 text-4xl font-bold text-[#0d1b2a] md:text-5xl">
+            Where Are Our Products Used?
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-[#425962]">
+            We have installed our{" "}
+            <strong className="text-[#00a884]">MULTIBEN®</strong> in Star
+            Hotels, Hostels, Hospitals, Independent Bungalows, Villas,
+            Residential Apartments and Factories. Centralized Hot Water
+            Solutions are very cost effective in Multi-storied apartments.
+          </p>
         </div>
 
-        <div className="rounded-3xl bg-gray-900 p-12 text-white">
-          <div className="mb-12 flex items-center gap-6">
-            <div className="shrink-0 rounded-2xl bg-(--color-primary)/20 p-4">
-              <Building className="h-8 w-8 text-(--color-primary)" />
-            </div>
-            <p className="text-lg text-gray-400">
-              Alldelite Heat Pumps are installed in{" "}
-              <span className="text-(--color-primary)">
-                various commercial and industrial settings worldwide
-              </span>
-              . From large manufacturing plants to small businesses, our
-              solutions provide reliable energy savings.
-            </p>
-          </div>
+        <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
+          {applications.map((app) => (
+            <div
+              key={app.label}
+              className="group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all hover:shadow-md"
+            >
+              <div className="relative h-44 overflow-hidden">
+                <img
+                  src={app.img}
+                  alt={app.label}
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {USAGE.sectors.map((sector) => {
-              const Icon =
-                ICON_MAP[sector.iconKey as keyof typeof ICON_MAP] ?? Building;
-              return (
                 <div
-                  key={sector.label}
-                  className="cursor-default rounded-2xl border border-white/10 bg-[#364050] p-8 text-center backdrop-blur-sm transition-colors hover:bg-(--color-primary)/10"
+                  className={`absolute bottom-3 left-3 flex h-8 w-8 items-center justify-center rounded-lg ${app.iconBg} shadow-md`}
                 >
-                  <Icon className={`mx-auto mb-4 h-10 w-10 ${sector.color}`} />
-                  <span className="font-bold">{sector.label}</span>
+                  {app.icon}
                 </div>
-              );
-            })}
-          </div>
+              </div>
+
+              <div className="p-4">
+                <h4 className="font-bold text-[#0d1b2a]">{app.label}</h4>
+                <p className="mt-1 text-xs text-gray-500">{app.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
