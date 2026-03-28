@@ -1,4 +1,5 @@
 import {
+  CertificateSection,
   CTASection,
   HeroSection,
   HowItWorksSection,
@@ -32,11 +33,12 @@ export default function AboutPage() {
         <MissionSection />
         <TechnologySection />
         <HowItWorksSection />
-        <MultiBenHybridSection />
         <UniquenessSection />
         <UsageSection />
+        <MultiBenHybridSection />
         <ProductRangeSection />
         <LocationSection />
+        <CertificateSection />
         <CTASection />
       </main>
       <Footer />
