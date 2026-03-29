@@ -1,4 +1,4 @@
-import { Check, CircleCheckBig, Zap } from "lucide-react";
+import { CircleCheckBig, Zap } from "lucide-react";
 
 import Capsule from "@/components/shared/Capsule";
 import {

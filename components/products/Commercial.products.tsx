@@ -1,4 +1,4 @@
-import { Activity, CheckCircle, CircleCheckBig, Star, Zap } from "lucide-react";
+import { Star } from "lucide-react";
 
 import { COMMERCIAL_HEAT_PUMPS } from "@/contents/products";
 

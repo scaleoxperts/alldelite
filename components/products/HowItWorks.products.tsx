@@ -1,7 +1,5 @@
 "use client";
 
-import { Activity, Droplets, Thermometer, Wind, Wrench } from "lucide-react";
-
 import { HOW_IT_WORKS_PRODUCTS } from "@/contents/products";
 
 export default function HowItWorksSection() {
