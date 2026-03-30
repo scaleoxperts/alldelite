@@ -82,7 +82,7 @@ export const PROVEN_RESULTS = {
       subLabel: "Across all Industries",
     },
     {
-      value: "₹500Cr+",
+      value: "₹500 Million+",
       label: "Energy Cost Saved",
       subLabel: "For our Clients Annually",
     },
