@@ -4,7 +4,7 @@ export const SOLUTIONS_HERO = {
   badge: "Our Solutions",
   heading: "Comprehensive Heat\nPump Solutions",
   description:
-    "End-to-end solutions designed to maximize efficiency, reduce costs, and support your sustainability goals.",
+    "End-to-end solutions designed to maximize efficiency, reduce costs, and support your sustainability goals. For Centralized Hot Water Generation and Building Cooling and Heating.",
   primaryCta: "Request Consultation",
   secondaryCta: "View Products",
 } as const;
@@ -16,7 +16,7 @@ export const ENERGY_EFFICIENCY_FEATURES = [
     iconBg: "bg-gradient-accent-primary",
   },
   {
-    title: "Intelligent microprocessor-based temperature control (±2°C-60°C)",
+    title: "Intelligent microprocessor-based temperature control (25°C–60°C)",
     iconKey: "cpu",
     iconBg: "bg-gradient-accent-blue",
   },
@@ -34,7 +34,7 @@ export const ENERGY_EFFICIENCY_FEATURES = [
 
 export const COST_REDUCTION_BENEFITS = [
   "Lower electricity consumption",
-  "Reduced fuel dependency",
+  // "Reduced fuel dependency",
   "Faster return on investment",
   "Lower maintenance and lifecycle costs",
 ] as const;
@@ -66,14 +66,14 @@ export const SUSTAINABILITY_CHECKLIST = [
   "Reduced carbon footprint",
   "Renewable air-to-water heat pump systems",
   "Ozone-friendly refrigerants",
-  "Ideal for green buildings, hotels, estates & industries",
+  "Ideal for green buildings, hotels, hospitals & industries",
 ] as const;
 
 export const SUSTAINABILITY_STATS = [
   { icon: Zap, value: "70%", label: "Energy Savings" },
   { icon: TrendingDown, value: "1-3 Years", label: "ROI Period" },
-  { icon: Wind, value: "0%", label: "Ozone Depletion" },
-  { icon: Leaf, value: "100%", label: "Renewable" },
+  { icon: Wind, value: "Very minimum", label: "Ozone Depletion" },
+  { icon: Leaf, value: "Reliable", label: "Renewable" },
 ] as const;
 
 export const SAFETY_WARNING_TEXT =
