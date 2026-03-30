@@ -1,3 +1,5 @@
+import { TrendingUp } from "lucide-react";
+
 import { HERO_STATS } from "@/contents/landing";
 
 export default function HeroSection() {
@@ -8,9 +10,7 @@ export default function HeroSection() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <div className="mb-6 inline-flex items-center space-x-2 rounded-full border border-gray-700 bg-gray-800/50 px-3 py-1">
-              <span className="material-icons-outlined text-sm text-(--color-primary)">
-                trending_up
-              </span>
+              <TrendingUp className="text-sm text-(--color-primary)" />
               <span className="text-xs font-medium tracking-wide text-gray-300 uppercase">
                 Enterprise Heat Pump Solutions
               </span>
