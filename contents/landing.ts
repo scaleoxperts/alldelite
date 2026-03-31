@@ -1,5 +1,5 @@
 export const HERO_STATS = [
-  { value: "45%", label: "Energy Cost Reduction" },
+  { value: "45-75%", label: "Energy Cost Reduction" },
   { value: "1-3", unit: "Years", label: "Years to ROI" },
   { value: "200+", label: "Commercial Installations" },
   {
@@ -40,7 +40,7 @@ export const INDUSTRY_SOLUTIONS = [
     icon: "apartment",
     iconBg: "bg-gradient-accent-primary",
     features: [
-      "Bulk Pricing for Multi-Unit Projects",
+      "Bulk Pricing for Multi-Unit Projects High rise Residential apartments",
       "Pre-Construction Design Consultation",
       "Installation Timeline Coordination",
     ],
@@ -60,8 +60,8 @@ export const INDUSTRY_SOLUTIONS = [
     features: [
       "Ultra-Quiet Operation for Guest Comfort",
       "Pool & Spa Heating Solutions",
-      "24/7 Priority Maintenance",
-      "Dedicated Account Manager",
+      // "24/7 Priority Maintenance",
+      "Dedicated Account Manager for big projects",
     ],
     cta: "Get Hotel Pricing",
     ctaClass:
@@ -71,7 +71,7 @@ export const INDUSTRY_SOLUTIONS = [
   {
     title: "Industries & Factories",
     description:
-      "Implement high performance heating system engineered to meet the rigorous demands of industrial operations.",
+      "Implement a high and Very High temperature heating system engineered to meet the rigorous demands of industrial operations.",
     image: "/landing/impact-3.png",
     imageAlt: "Industrial factory",
     icon: "factory",

@@ -15,10 +15,10 @@ export default function HeroSection() {
                 Enterprise Heat Pump Solutions
               </span>
             </div>
-            <h1 className="mb-6 text-4xl leading-tight font-bold text-white lg:text-6xl">
+            <h1 className="mb-6 text-3xl leading-tight font-bold text-white lg:text-6xl">
               Driving Energy Innovation with{" "}
               <span className="text-(--color-primary)">
-                Efficient Heating &amp; Intelligent Energy Solutions
+                Efficient Cooling and Heating &amp; Hot Water Generation
               </span>
             </h1>
             <p className="mb-8 max-w-xl text-lg leading-relaxed text-gray-400">
