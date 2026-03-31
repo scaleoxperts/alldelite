@@ -9,6 +9,7 @@ export const NAV_LINKS = [
   { label: "Solutions", href: "/solutions" },
   { label: "Industries", href: "/industries" },
   { label: "Products", href: "/products" },
+  { label: "Export", href: "/export" },
   { label: "About Us", href: "/about" },
 ] as const;
 
