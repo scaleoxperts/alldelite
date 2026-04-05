@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { MapPin, TrendingUp, Users, Zap } from "lucide-react";
+
 import Capsule from "../shared/Capsule";
 
 const features = [
@@ -7,61 +9,19 @@ const features = [
     label: "Market Access",
     desc: "Direct access to Southeast Asian and Asia-Pacific markets",
     iconBg: "bg-[#3b82f6]",
-    icon: (
-      <svg
-        className="h-5 w-5 text-white"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-        />
-      </svg>
-    ),
+    icon: <TrendingUp className="h-5 w-5 text-white" />,
   },
   {
     label: "Local Expertise",
     desc: "Partnering with regional industry experts and networks",
     iconBg: "bg-[#3b82f6]",
-    icon: (
-      <svg
-        className="h-5 w-5 text-white"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
-        />
-      </svg>
-    ),
+    icon: <Users className="h-5 w-5 text-white" />,
   },
   {
     label: "Innovation Hub",
     desc: "Leveraging Singapore&apos;s advanced technology ecosystem",
     iconBg: "bg-[#3b82f6]",
-    icon: (
-      <svg
-        className="h-5 w-5 text-white"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M13 10V3L4 14h7v7l9-11h-7z"
-        />
-      </svg>
-    ),
+    icon: <Zap className="h-5 w-5 text-white" />,
   },
 ];
 
@@ -91,25 +51,7 @@ export default function SingaporeSection() {
             />
 
             <div className="absolute right-0 bottom-0 left-0 m-4 flex items-center gap-3 rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur-md">
-              <svg
-                className="h-5 w-5 text-[#00a884]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-              </svg>
+              <MapPin className="h-6 w-6 text-green-500" />
               <div>
                 <div className="font-bold text-white">
                   Singapore Partnership
