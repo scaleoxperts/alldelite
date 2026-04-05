@@ -83,7 +83,7 @@ export default function SingaporeSection() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative overflow-hidden rounded-3xl shadow-2xl">
             <Image
-              src="https://placehold.co/700x480/0a1f18/aaccaa?text=Singapore+Skyline"
+              src="/export/strategic-partnership.png"
               alt="Singapore"
               width={700}
               height={480}
