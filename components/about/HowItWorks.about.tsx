@@ -30,7 +30,7 @@ export default function HowItWorksSection() {
               How a Heat Pump Works
             </div>
             <img
-              src="https://placehold.co/800x400/f9f3e0/1a2e2e?text=Heat+Pump+Diagram+(Compressor+%7C+Evaporator+%7C+Condenser+%7C+Expansion+Valve)"
+              src="/about/heat-pump-works.png"
               alt="How a Heat Pump Works"
               className="h-auto w-full rounded-xl"
             />

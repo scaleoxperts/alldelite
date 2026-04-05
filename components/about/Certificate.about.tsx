@@ -6,7 +6,7 @@ const certs = [
     subtitle: "Indian Green Building Council",
     iconBg: "bg-[#00a884]",
     borderColor: "border-[#00a884]",
-    img: "https://placehold.co/600x340/f0faf6/1a3a3a?text=IGBC+Membership+Certificate",
+    img: "/about/igbc-membership-certificate.jpg",
     stats: [
       {
         label: "Membership No",
@@ -22,7 +22,7 @@ const certs = [
     subtitle: "American Society of HVAC Engineers",
     iconBg: "bg-[#3b82f6]",
     borderColor: "border-[#3b82f6]",
-    img: "https://placehold.co/600x340/eff6ff/1a3a3a?text=ASHRAE+Membership+Certificate",
+    img: "/about/ashrae-certificate.jpg",
     stats: [
       { label: "Member No", value: "204333", color: "text-[#3b82f6]" },
       { label: "Grade", value: "Associate", color: "text-[#3b82f6]" },

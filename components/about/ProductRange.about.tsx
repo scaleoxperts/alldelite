@@ -135,15 +135,15 @@ export default function ProductRangeSection() {
                 {[
                   {
                     label: "MULTIBEN® Geo System",
-                    img: "https://placehold.co/400x240/e8f5f0/1a3a3a?text=Geo+System",
+                    img: "/about/product-range-1.png",
                   },
                   {
                     label: "Vertical Loop System",
-                    img: "https://placehold.co/400x240/e8f5f0/1a3a3a?text=Vertical+Loop",
+                    img: "/about/product-range-2.png",
                   },
                   {
                     label: "Horizontal Loop System",
-                    img: "https://placehold.co/400x240/e8f5f0/1a3a3a?text=Horizontal+Loop",
+                    img: "/about/product-range-3.png",
                   },
                 ].map((item) => (
                   <div key={item.label} className="text-center">

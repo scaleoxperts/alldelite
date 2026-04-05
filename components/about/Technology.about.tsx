@@ -55,7 +55,7 @@ export default function TechnologySection() {
           <div className="flex flex-col gap-4">
             <div className="overflow-hidden rounded-2xl shadow-xl">
               <img
-                src="https://placehold.co/700x420/1a2e2e/ffffff?text=Heat+Pump+Technology"
+                src="/about/technology.png"
                 alt="Heat Pump Technology"
                 className="h-auto w-full object-cover"
               />

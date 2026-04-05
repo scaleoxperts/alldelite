@@ -39,7 +39,7 @@ export default function WhoAreWeSection() {
           <div className="flex flex-col gap-4">
             <div className="overflow-hidden rounded-2xl shadow-xl">
               <img
-                src="https://placehold.co/700x400/1a2e2e/ffffff?text=SK+Alldelite+Facility"
+                src="/about/whoarewe.png"
                 alt="SK Alldelite Facility"
                 className="h-auto w-full object-cover"
               />

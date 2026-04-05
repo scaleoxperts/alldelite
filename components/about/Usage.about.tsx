@@ -4,7 +4,7 @@ const applications = [
   {
     label: "Villas & Bungalows",
     description: "Independent homes with efficient hot water systems.",
-    img: "https://placehold.co/600x320/1a3a3a/ffffff?text=Villas+%26+Bungalows",
+    img: "/about/product-used-1.png",
     iconBg: "bg-[#00a884]",
     icon: (
       <svg
@@ -19,7 +19,7 @@ const applications = [
   {
     label: "Hotels & Hostels",
     description: "Star hotels with centralized hot water solutions.",
-    img: "https://placehold.co/600x320/1a3a3a/ffffff?text=Hotels+%26+Hostels",
+    img: "/about/product-used-2.png",
     iconBg: "bg-[#00a884]",
     icon: (
       <svg
@@ -34,7 +34,7 @@ const applications = [
   {
     label: "Hospitals",
     description: "Healthcare facilities requiring reliable hot water.",
-    img: "https://placehold.co/600x320/1a3a3a/ffffff?text=Hospitals",
+    img: "/about/product-used-3.png",
     iconBg: "bg-[#3b82f6]",
     icon: (
       <svg
@@ -55,7 +55,7 @@ const applications = [
   {
     label: "Multi-Storied Apartments",
     description: "Residential buildings with cost-effective systems.",
-    img: "https://placehold.co/600x320/1a3a3a/ffffff?text=Apartments",
+    img: "/about/product-used-4.png",
     iconBg: "bg-[#00a884]",
     icon: (
       <svg
@@ -72,7 +72,7 @@ const applications = [
   {
     label: "Factories",
     description: "Industrial facilities with large-scale requirements.",
-    img: "https://placehold.co/600x320/1a3a3a/ffffff?text=Factories",
+    img: "/about/product-used-5.png",
     iconBg: "bg-[#00a884]",
     icon: (
       <svg
