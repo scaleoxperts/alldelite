@@ -1,3 +1,5 @@
+import { Briefcase, Newspaper, TrendingUp } from "lucide-react";
+
 import Capsule from "../shared/Capsule";
 
 const milestones = [
@@ -8,22 +10,8 @@ const milestones = [
     desc: "Establishing Alldelite Renewables Private Limited and finalizing Singapore collaboration agreements",
     status: "In Progress",
     statusColor: "bg-[#00a884]/20 text-[#00a884]",
-    iconBg: "bg-[#00a884]",
-    icon: (
-      <svg
-        className="h-6 w-6 text-white"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-        />
-      </svg>
-    ),
+    iconBg: "bg-industries-cta",
+    icon: <Newspaper className="h-6 w-6" />,
   },
   {
     phase: null,
@@ -32,22 +20,8 @@ const milestones = [
     desc: "Building export infrastructure, compliance frameworks, and market entry strategies",
     status: "Upcoming",
     statusColor: "bg-[#3b82f6]/20 text-[#60a5fa]",
-    iconBg: "bg-[#1e3a5f]",
-    icon: (
-      <svg
-        className="h-6 w-6 text-[#60a5fa]"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-        />
-      </svg>
-    ),
+    iconBg: "bg-industries-cta ",
+    icon: <Briefcase className="h-6 w-6" />,
   },
   {
     phase: null,
@@ -56,22 +30,8 @@ const milestones = [
     desc: "Beginning commercial operations with Singapore partner and expanding to regional markets",
     status: "Planned",
     statusColor: "bg-white/10 text-gray-400",
-    iconBg: "bg-[#00a884]",
-    icon: (
-      <svg
-        className="h-6 w-6 text-white"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-        />
-      </svg>
-    ),
+    iconBg: "bg-industries-cta",
+    icon: <TrendingUp className="h-6 w-6" />,
   },
 ];
 
