@@ -2,6 +2,8 @@
 
 import { HOW_IT_WORKS_PRODUCTS } from "@/contents/products";
 
+import MultibenLogo from "../shared/MultibenLogo";
+
 export default function HowItWorksSection() {
   return (
     <section className="bg-(--color-background-dark) py-20 text-center text-white">
@@ -11,7 +13,7 @@ export default function HowItWorksSection() {
         </span>
 
         <h2 className="mb-4 text-4xl font-bold md:text-5xl">
-          {HOW_IT_WORKS_PRODUCTS.heading}
+          How <MultibenLogo /> Heat Pump Works
         </h2>
         <p className="mx-auto mb-12 max-w-xl text-sm text-gray-400">
           Essential pre-start checklist before operating your heat pump system

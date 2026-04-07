@@ -105,7 +105,7 @@ export const GROUND_SOURCE_HEAT_PUMPS = {
 
 export const PRE_INSTALLATION = {
   badge: "Support",
-  heading: "Pre-Installation Guidelines",
+  heading: "Heat Pump Pre-Installation Guidelines",
   description:
     "Ensure a smooth installation process by following these key preparation steps.",
   guidelines: [
