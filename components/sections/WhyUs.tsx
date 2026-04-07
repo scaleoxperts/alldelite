@@ -10,10 +10,10 @@ export default function WhyUsSection() {
             Why Choose Us
           </span>
           <h2 className="mb-6 text-3xl font-bold text-gray-900 md:text-4xl">
-            Why Leading Businesses Choose Alldelite?
+            Why Leading Businesses Choose SK Alldelite?
           </h2>
           <p className="mx-auto max-w-3xl text-gray-600">
-            Leading businesses choose Alldelite for its proven expertise,
+            Leading businesses choose SK Alldelite for its proven expertise,
             high-efficiency heat pump technology, and long-term cost savings.
             Delivering up to 3~4.5x energy output per unit of electricity.
           </p>

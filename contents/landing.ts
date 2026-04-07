@@ -95,14 +95,14 @@ export const PRODUCTS = [
     iconBg: "bg-gradient-accent-primary",
     title: "Commercial Heat Pump",
     description:
-      "Advanced scroll compressor technology with eco-friendly refrigerants, delivering reliable, high-performance heating.",
+      "Advanced scroll compressor technology with eco-friendly refrigerants, delivering reliable, high-performance heating for hotels, hospitals, and large-scale industrial applications.",
   },
   {
     icon: "water_drop",
     iconBg: "bg-gradient-accent-blue",
     title: "Swimming Pool Heat Pumps",
     description:
-      "Designed to heat swimming pool water efficiently using ambient air heat, these high-performance systems save energy.",
+      "Designed to heat swimming pool water efficiently using ambient air heat, these high-performance, energy-efficient systems deliver reliable hot water with substantial energy savings.",
   },
   {
     icon: "bolt",

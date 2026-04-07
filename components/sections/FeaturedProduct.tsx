@@ -46,12 +46,12 @@ export default function FeaturedProductSection() {
             Generation)
           </h2>
           <p className="mx-auto max-w-3xl leading-relaxed text-gray-600">
-            This heat pump features a world-famous scroll compressor for
+            This heat pump features a world-class scroll compressor for
             reliable, high-performance operation and uses eco-friendly
-            refrigerants (R134A, R417A, R407C) with zero ozone depletion.
+            refrigerants (R134A, R417A, R407C) with minimal ozone depletion.
             Intelligent digital controls with an LCD display allow precise water
-            temperature adjustment from 25°C to 60°C, while high-efficiency
-            copper tubing ensures long-term durability.
+            temperature adjustment from 25°C 60°C, while high-efficiency copper
+            tubing ensures long-term durability
           </p>
         </div>
 
