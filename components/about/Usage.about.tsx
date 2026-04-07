@@ -1,4 +1,5 @@
 import Capsule from "../shared/Capsule";
+import MultibenLogo from "../shared/MultibenLogo";
 
 const applications = [
   {
@@ -101,8 +102,10 @@ export default function UsageSection() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-[#425962]">
             We have installed our{" "}
-            <strong className="text-[#00a884]">MULTIBEN®</strong> in Star
-            Hotels, Hostels, Hospitals, Independent Bungalows, Villas,
+            <strong className="inline-flex items-center gap-1 text-[#00a884]">
+              <MultibenLogo size="small" />
+            </strong>{" "}
+            in Star Hotels, Hostels, Hospitals, Independent Bungalows, Villas,
             Residential Apartments and Factories. Centralized Hot Water
             Solutions are very cost effective in Multi-storied apartments.
           </p>

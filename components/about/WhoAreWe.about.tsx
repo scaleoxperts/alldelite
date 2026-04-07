@@ -1,4 +1,5 @@
 import Capsule from "../shared/Capsule";
+import MultibenLogo from "../shared/MultibenLogo";
 
 export default function WhoAreWeSection() {
   return (
@@ -31,8 +32,10 @@ export default function WhoAreWeSection() {
             </p>
             <p>
               Introduced our Brand{" "}
-              <strong className="text-[#0d1b2a]">MULTIBEN</strong> in 2012 and
-              registered MULTIBEN®.
+              <span className="inline-flex items-center gap-1">
+                <MultibenLogo size="small" />
+              </span>{" "}
+              in 2012 and registered <MultibenLogo size="small" />.
             </p>
           </div>
 
@@ -58,8 +61,12 @@ export default function WhoAreWeSection() {
                   <div className="text-2xl font-bold text-[#00a884]">
                     {stat.year}
                   </div>
-                  <div className="mt-1 text-xs font-medium tracking-widest text-gray-500 uppercase">
-                    {stat.label}
+                  <div className="mt-1 flex items-center justify-center gap-1 text-xs font-medium tracking-widest text-gray-500 uppercase">
+                    {stat.label === "MULTIBEN®" ? (
+                      <MultibenLogo size="small" />
+                    ) : (
+                      stat.label
+                    )}
                   </div>
                 </div>
               ))}

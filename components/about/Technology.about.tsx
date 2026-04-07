@@ -1,4 +1,5 @@
 import Capsule from "../shared/Capsule";
+import MultibenLogo from "../shared/MultibenLogo";
 
 export default function TechnologySection() {
   return (
@@ -14,12 +15,13 @@ export default function TechnologySection() {
         <div className="grid items-start gap-10 lg:grid-cols-2">
           <div className="flex flex-col gap-6">
             <p className="leading-relaxed text-gray-600">
-              Our brand <strong className="text-[#00a884]">MULTIBEN®</strong>{" "}
+              Our brand <MultibenLogo size="small" />
+              <strong className="inline-flex items-center gap-1 text-[#00a884]"></strong>{" "}
               works on the principle of extracting energy from the environment —
               similar to how an air conditioner works, but in reverse. Instead
-              of creating heat directly like conventional boilers, MULTIBEN
-              captures ambient heat energy and uses it to heat water in an
-              energy-efficient way.
+              of creating heat directly like conventional boilers,{" "}
+              <MultibenLogo size="small" /> captures ambient heat energy and
+              uses it to heat water in an energy-efficient way.
             </p>
 
             <div className="rounded-2xl border border-[#00a884]/20 bg-[#f0faf6] p-6">
@@ -40,8 +42,8 @@ export default function TechnologySection() {
                 </h4>
               </div>
               <p className="text-sm leading-relaxed text-gray-600">
-                With a <strong className="text-[#0d1b2a]">COP of 3–4.5</strong>,
-                MULTIBEN can produce up to{" "}
+                With a <strong className="text-[#0d1b2a]">COP of 3–4.5</strong>,{" "}
+                <MultibenLogo size="small" /> can produce up to{" "}
                 <strong className="text-[#00a884]">4 kW of heat energy</strong>{" "}
                 from just{" "}
                 <strong className="text-[#0d1b2a]">

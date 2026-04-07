@@ -1,4 +1,7 @@
 import Capsule from "../shared/Capsule";
+import MultibenLogo from "../shared/MultibenLogo";
+
+type Size = "small" | "medium" | "large";
 
 export default function ProductRangeSection() {
   return (
@@ -36,26 +39,27 @@ export default function ProductRangeSection() {
             <div className="grid gap-3 p-6 sm:grid-cols-2 md:grid-cols-3">
               {[
                 {
-                  name: "MULTIBEN® AHp",
+                  name: "AHp",
                   spec: "Output temperature",
                   value: "60°C",
                   color: "text-[#3b82f6]",
                 },
                 {
-                  name: "MULTIBEN® HT",
+                  name: "HT",
                   spec: "High temperature",
                   value: "80°C",
                   color: "text-[#3b82f6]",
                 },
                 {
-                  name: "MULTIBEN® VHT",
+                  name: "VHT",
                   spec: "Very high temperature",
                   value: "up to 120°C",
                   color: "text-[#3b82f6]",
                 },
               ].map((product) => (
                 <div key={product.name} className="rounded-xl bg-[#f5faf8] p-4">
-                  <div className="font-semibold text-[#0d1b2a]">
+                  <div className="flex items-center gap-1 font-semibold text-[#0d1b2a]">
+                    <MultibenLogo size="small" />
                     {product.name}
                   </div>
                   <div className="mt-1 text-xs text-gray-500">
@@ -90,8 +94,9 @@ export default function ProductRangeSection() {
             </div>
             <div className="p-6">
               <div className="inline-block rounded-xl bg-[#f5faf8] p-4">
-                <div className="font-semibold text-[#0d1b2a]">
-                  MULTIBEN® Aqua
+                <div className="flex items-center gap-1 font-semibold text-[#0d1b2a]">
+                  <MultibenLogo size="small" />
+                  Aqua
                 </div>
                 <div className="mt-1 text-xs text-gray-500">
                   Efficient water-to-water heat transfer system
@@ -123,8 +128,9 @@ export default function ProductRangeSection() {
             </div>
             <div className="p-6">
               <div className="mb-5 inline-block rounded-xl bg-[#f5faf8] p-4">
-                <div className="font-semibold text-[#0d1b2a]">
-                  MULTIBEN® Geo
+                <div className="flex items-center gap-1 font-semibold text-[#0d1b2a]">
+                  <MultibenLogo size="small" />
+                  Geo
                 </div>
                 <div className="mt-1 text-xs text-gray-500">
                   Geothermal energy extraction from the earth
@@ -134,7 +140,7 @@ export default function ProductRangeSection() {
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
                 {[
                   {
-                    label: "MULTIBEN® Geo System",
+                    label: "Geo System",
                     img: "/about/product-range-1.png",
                   },
                   {
@@ -152,8 +158,15 @@ export default function ProductRangeSection() {
                       alt={item.label}
                       className="mb-2 w-full rounded-xl border border-gray-100 shadow-sm"
                     />
-                    <p className="text-xs font-semibold tracking-wide text-gray-500 uppercase">
-                      {item.label}
+                    <p className="flex items-center justify-center gap-1 text-xs font-semibold tracking-wide text-gray-500 uppercase">
+                      {item.label === "Geo System" ? (
+                        <>
+                          <MultibenLogo size="small" />
+                          Geo System
+                        </>
+                      ) : (
+                        item.label
+                      )}
                     </p>
                   </div>
                 ))}
