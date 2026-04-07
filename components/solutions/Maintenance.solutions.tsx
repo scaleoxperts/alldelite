@@ -46,12 +46,12 @@ export default function MaintenanceSection() {
               </div>
             ))}
           </div>
-          <div className="mt-6 flex items-start justify-start gap-3 border-t border-orange-200 pt-6">
+          {/* <div className="mt-6 flex items-start justify-start gap-3 border-t border-orange-200 pt-6">
             <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-orange-500" />
             <span className="text-sm text-(--color-text-black)">
               Keep the valves open while the heat pump is operating.
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
