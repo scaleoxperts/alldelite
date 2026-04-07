@@ -6,8 +6,7 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage:
-            "linear-gradient(rgba(5,20,15,0.78), rgba(5,20,15,0.78)), url('https://placehold.co/1920x900/0a1f18/1a4a3a?text=Port+%26+Shipping+Cranes')",
+          backgroundImage: "url('/export/hero.png')",
         }}
       />
 
