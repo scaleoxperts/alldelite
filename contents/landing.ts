@@ -12,19 +12,19 @@ export const HERO_STATS = [
 export const IMPACT_METRICS = [
   {
     icon: "water_drop",
-    value: "1,102,531,985.60",
+    value: 1102531985.6,
     label: "Hot Water Generated",
     unit: "in Liters",
   },
   {
     icon: "bolt",
-    value: "39,888,115.60",
+    value: 39888115.6,
     label: "Energy Saved",
     unit: "Kilowatt Hours (kWh)",
   },
   {
     icon: "eco",
-    value: "30,589,112",
+    value: 30589112,
     label: "Carbon Offset",
     unit: "in Kilograms",
   },
