@@ -10,6 +10,7 @@ import {
   PreInstallationSection,
   SwimmingPoolSection,
 } from "@/components/products";
+import ProductRange from "@/components/products/ProductRange";
 
 export const metadata = {
   title: "Products - Alldelite | Heat Pump Solutions",
@@ -24,6 +25,7 @@ export default function ProductsPage() {
       <Navbar />
       <main>
         <HeroSection />
+        <ProductRange />
         <CommercialSection />
         <SwimmingPoolSection />
         <GroundSourceSection />
