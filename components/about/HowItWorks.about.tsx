@@ -30,7 +30,7 @@ export default function HowItWorksSection() {
               How a Heat Pump Works
             </div>
             <img
-              src="/about/heat-pump-works.png"
+              src="/products/heat-pump-cycle.gif"
               alt="How a Heat Pump Works"
               className="h-auto w-full rounded-xl"
             />

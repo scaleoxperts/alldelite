@@ -77,7 +77,7 @@ export const PROVEN_RESULTS = {
     "Delivering excellence with a track record of success and client satisfaction.",
   stats: [
     {
-      value: "2,000+",
+      value: "200+",
       label: "Projects Completed",
       subLabel: "Across all Industries",
     },

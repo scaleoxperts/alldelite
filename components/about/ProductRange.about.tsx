@@ -162,7 +162,7 @@ export default function ProductRangeSection() {
                       {item.label === "Geo System" ? (
                         <>
                           <MultibenLogo size="small" />
-                          Geo System
+                          Geothermal System
                         </>
                       ) : (
                         item.label
