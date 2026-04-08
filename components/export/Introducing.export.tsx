@@ -4,6 +4,8 @@ import Capsule from "../shared/Capsule";
 
 const highlights = [
   {
+    bg: "bg-[#EDFBF8]",
+    border: "border-[#AFF5D5]",
     iconBg: "bg-[#00a884]/10",
     iconColor: "text-[#00a884]",
     label: "Primary Focus",
@@ -20,6 +22,8 @@ const highlights = [
     icon: <Goal className="h-5 w-5" />,
   },
   {
+    bg: "bg-[#EFF7FF]",
+    border: "border-[#BEDBFF]",
     iconBg: "bg-[#00a884]/10",
     iconColor: "text-[#00a884]",
     label: "Strategic Collaboration",
@@ -27,6 +31,8 @@ const highlights = [
     icon: <Handshake className="h-5 w-5 text-blue-500" />,
   },
   {
+    bg: "bg-[#F6F3FF]",
+    border: "border-[#DDD6FF]",
     iconBg: "bg-[#3b82f6]/10",
     iconColor: "text-[#3b82f6]",
     label: "Commercial Operations Timeline",
@@ -90,7 +96,7 @@ export default function IntroducingSection() {
                 className={`rounded-2xl border p-5 ${
                   h.dark
                     ? "border-[#00a884]/20 bg-[#0d2626] text-white"
-                    : "border-gray-100 bg-[#f9fafb]"
+                    : `${h.border} ${h.bg}`
                 }`}
               >
                 <div className="mb-2 flex items-center gap-2">
