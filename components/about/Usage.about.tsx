@@ -1,3 +1,5 @@
+import { Building, Factory, Home, Hospital, Save } from "lucide-react";
+
 import Capsule from "../shared/Capsule";
 import MultibenLogo from "../shared/MultibenLogo";
 
@@ -7,87 +9,35 @@ const applications = [
     description: "Independent homes with efficient hot water systems.",
     img: "/about/product-used-1.png",
     iconBg: "bg-[#00a884]",
-    icon: (
-      <svg
-        className="h-4 w-4 text-white"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-      >
-        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l1.293 1.293a1 1 0 001.414-1.414l-7-7z" />
-      </svg>
-    ),
+    icon: <Home className="h-4 w-4 text-white" />,
   },
   {
     label: "Hotels & Hostels",
     description: "Star hotels with centralized hot water solutions.",
     img: "/about/product-used-2.png",
     iconBg: "bg-[#00a884]",
-    icon: (
-      <svg
-        className="h-4 w-4 text-white"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-      >
-        <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
-      </svg>
-    ),
+    icon: <Save className="h-4 w-4 text-white" />,
   },
   {
     label: "Hospitals",
     description: "Healthcare facilities requiring reliable hot water.",
     img: "/about/product-used-3.png",
     iconBg: "bg-[#3b82f6]",
-    icon: (
-      <svg
-        className="h-4 w-4 text-white"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"
-        />
-      </svg>
-    ),
+    icon: <Hospital className="h-4 w-4 text-white" />,
   },
   {
     label: "Multi-Storied Apartments",
     description: "Residential buildings with cost-effective systems.",
     img: "/about/product-used-4.png",
     iconBg: "bg-[#00a884]",
-    icon: (
-      <svg
-        className="h-4 w-4 text-white"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-      >
-        <path d="M4 4a2 2 0 012-2h4a2 2 0 012 2v2H4V4z" />
-        <path d="M4 8h8v10H4V8z" />
-        <path d="M14 4h2a2 2 0 012 2v12a2 2 0 01-2 2h-2V4z" />
-      </svg>
-    ),
+    icon: <Building className="h-4 w-4 text-white" />,
   },
   {
     label: "Factories",
     description: "Industrial facilities with large-scale requirements.",
     img: "/about/product-used-5.png",
     iconBg: "bg-[#00a884]",
-    icon: (
-      <svg
-        className="h-4 w-4 text-white"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-      >
-        <path
-          fillRule="evenodd"
-          d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ),
+    icon: <Factory className="h-4 w-4 text-white" />,
   },
 ];
 

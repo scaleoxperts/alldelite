@@ -1,3 +1,5 @@
+import { Target, Zap } from "lucide-react";
+
 import Capsule from "../shared/Capsule";
 import MultibenLogo from "../shared/MultibenLogo";
 
@@ -27,15 +29,7 @@ export default function TechnologySection() {
             <div className="rounded-2xl border border-[#00a884]/20 bg-[#f0faf6] p-6">
               <div className="mb-3 flex items-center gap-3">
                 <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#00a884]">
-                  <svg
-                    className="h-5 w-5 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle cx="12" cy="12" r="9" strokeWidth="2" />
-                    <circle cx="12" cy="12" r="3" strokeWidth="2" />
-                  </svg>
+                  <Target className="h-4 w-4 text-white" />
                 </div>
                 <h4 className="font-bold text-[#0d1b2a]">
                   Coefficient of Performance (COP)
@@ -72,17 +66,7 @@ export default function TechnologySection() {
               </div>
 
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#00a884]/10">
-                <svg
-                  className="h-5 w-5 text-[#00a884]"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                <Zap className="h-5 w-5 text-[#00a884]" fill="#00a884" />
               </div>
 
               <div className="text-center">

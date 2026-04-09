@@ -1,3 +1,5 @@
+import { Target } from "lucide-react";
+
 import Capsule from "../shared/Capsule";
 
 export default function MissionSection() {
@@ -15,15 +17,7 @@ export default function MissionSection() {
           <div className="rounded-2xl bg-white p-8 shadow-md shadow-gray-100 md:p-10">
             <div className="flex items-start gap-5">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#00a884]">
-                <svg
-                  className="h-6 w-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="12" cy="12" r="9" strokeWidth="2" />
-                  <circle cx="12" cy="12" r="3" strokeWidth="2" />
-                </svg>
+                <Target className="h-5 w-5 text-white" />
               </div>
 
               <div>
