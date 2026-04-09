@@ -1,14 +1,15 @@
 import { SITE_CONFIG } from "@/contents/constants";
 import { WHY_US } from "@/contents/landing";
 
+import Capsule from "../shared/Capsule";
+
 export default function WhyUsSection() {
   return (
     <section className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-20 text-center">
-          <span className="mb-6 inline-block rounded-full bg-gray-100 px-4 py-1.5 text-xs font-bold tracking-wide text-(--color-primary) uppercase">
-            Why Choose Us
-          </span>
+          <Capsule text="Why Choose Us" />
+
           <h2 className="mb-6 text-3xl font-bold text-gray-900 md:text-4xl">
             Why Leading Businesses Choose SK Alldelite?
           </h2>

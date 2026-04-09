@@ -23,13 +23,12 @@ const FEATURES = [
 export default function SwimmingPoolSection() {
   return (
     <section id="swimming-pool" className="bg-products-pool py-20">
+      <span className="mx-auto mb-6 block w-fit rounded-full border border-blue-300 bg-blue-50 px-4 py-1.5 text-xs font-bold tracking-widest text-blue-500 uppercase">
+        Pool Heating
+      </span>
       <div className="mx-auto max-w-7xl px-5">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div>
-            <span className="mb-6 inline-block rounded-full border border-blue-300 bg-blue-50 px-4 py-1.5 text-xs font-bold tracking-widest text-blue-500 uppercase">
-              Pool Heating
-            </span>
-
             <h2 className="mb-6 text-5xl leading-tight font-bold text-(--color-secondary) md:text-6xl">
               {SWIMMING_POOL_HEAT_PUMPS.heading.split("\n").map((line, i) => (
                 <span key={i}>

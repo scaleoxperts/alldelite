@@ -2,14 +2,15 @@ import Image from "next/image";
 
 import { CASE_STUDIES } from "@/contents/landing";
 
+import Capsule from "../shared/Capsule";
+
 export default function CaseStudiesSection() {
   return (
     <section className="bg-case-studies py-28 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-20 text-center">
-          <span className="mb-6 inline-block rounded-full border border-(--color-primary) bg-(--color-primary)/20 px-4 py-1.5 text-xs font-semibold tracking-widest text-(--color-primary) uppercase">
-            Real-World Applications
-          </span>
+          <Capsule text="Real-World Applications" variant="dark" />
+
           <h2 className="mx-auto mb-6 max-w-4xl text-4xl leading-tight font-semibold md:text-5xl">
             Certified in Commercial and Industrial Heat Pump Manufacturing
           </h2>

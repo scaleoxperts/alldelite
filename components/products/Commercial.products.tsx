@@ -8,7 +8,9 @@ export default function CommercialSection() {
   return (
     <section id="commercial" className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-5">
-        <Capsule text="Commercial Grade" />
+        <div className="mb-6 flex justify-center">
+          <Capsule text="Commercial Grade" />
+        </div>
 
         <h2 className="mb-3 text-4xl font-bold text-(--color-secondary) md:text-5xl">
           {COMMERCIAL_HEAT_PUMPS.heading}

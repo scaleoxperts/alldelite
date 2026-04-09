@@ -5,7 +5,7 @@ export default function PreInstallationSection() {
     <section className="bg-(--color-background-light) py-20">
       <div className="mx-auto max-w-7xl px-5">
         <div className="mb-10 text-center">
-          <span className="mb-4 inline-block rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold tracking-wide text-blue-500 uppercase">
+          <span className="mx-auto mb-6 block w-fit rounded-full border border-blue-300 bg-blue-50 px-4 py-1.5 text-xs font-bold tracking-widest text-blue-500 uppercase">
             {PRE_INSTALLATION.badge}
           </span>
           <h2 className="mb-3 text-3xl font-bold text-gray-900 md:text-4xl">

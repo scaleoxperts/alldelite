@@ -2,15 +2,14 @@
 
 import { HOW_IT_WORKS_PRODUCTS } from "@/contents/products";
 
+import Capsule from "../shared/Capsule";
 import MultibenLogo from "../shared/MultibenLogo";
 
 export default function HowItWorksSection() {
   return (
     <section className="bg-(--color-background-dark) py-20 text-center text-white">
       <div className="mx-auto max-w-7xl px-5">
-        <span className="mb-6 inline-block rounded-full border border-(--color-primary) px-4 py-1.5 text-xs font-bold tracking-widest text-(--color-primary) uppercase">
-          Operations
-        </span>
+        <Capsule text="Product" variant="dark" />
 
         <h2 className="mb-4 text-4xl font-bold md:text-5xl">
           How <MultibenLogo /> Heat Pump Works

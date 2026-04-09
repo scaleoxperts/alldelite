@@ -1,12 +1,12 @@
 import { SOLUTIONS_HERO } from "@/contents/solutions";
 
+import Capsule from "../shared/Capsule";
+
 export default function HeroSection() {
   return (
     <header className="relative flex items-center justify-center bg-linear-to-l from-green-950 to-(--color-background-dark) px-4 py-32 text-center text-white md:py-44">
       <div className="mx-auto max-w-4xl">
-        <div className="mb-6 inline-block rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-emerald-400 uppercase">
-          {SOLUTIONS_HERO.badge}
-        </div>
+        <Capsule text={SOLUTIONS_HERO.badge} variant="dark" />
 
         <h1 className="mb-6 text-4xl leading-tight font-bold md:text-6xl">
           {SOLUTIONS_HERO.heading.split("\n").map((line, i) => (
