@@ -68,7 +68,7 @@ export default function ImpactSection() {
 
         <p className="mt-12 text-xs text-gray-400 italic">
           Data updated in real-time across our network of commercial
-          installations worldwide
+          installations nationwide
         </p>
       </div>
     </section>

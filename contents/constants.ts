@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
   name: "Alldelite",
-  phone: "+91 9999374590",
-  email: "corp@alldelite.com",
+  phone: "+91 9550216000 / +91 9885207107",
+  email: "rajan@alldelite.com",
   tagline: "Industrial Energy Solutions",
 } as const;
 

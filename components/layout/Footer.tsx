@@ -82,7 +82,7 @@ export default function Footer() {
                 <span className="material-icons-outlined mt-0.5 mr-3 text-base text-(--color-primary)">
                   location_on
                 </span>
-                India - Serving Nationwide
+                Hyderabad, Serving Panindia
               </li>
             </ul>
           </div>

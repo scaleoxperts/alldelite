@@ -23,7 +23,7 @@ export default function HeroSection() {
             </h1>
             <p className="mb-8 max-w-xl text-lg leading-relaxed text-gray-400">
               A Trusted Leader in Sustainable Heating &amp; Renewable Energy
-              Solutions for commercial buildings, hospitality and businesses.
+              Solutions for Hotels, Hostels, Hospitals and Industries.
             </p>
             <div className="mb-8 flex flex-col gap-4 text-sm text-gray-300 sm:flex-row">
               {[

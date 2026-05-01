@@ -11,7 +11,7 @@ export default function IndustrySolutionsSection() {
         <div className="mb-16 text-center">
           <Capsule text="Industry Solutions" />
           <h2 className="mb-4 text-4xl font-bold text-gray-900">
-            Tailored For Your need
+            Tailored For Your Need
           </h2>
           <p className="mx-auto max-w-2xl text-gray-600">
             Purpose-built solutions designed to meet the unique demands of
