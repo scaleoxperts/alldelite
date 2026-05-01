@@ -3,6 +3,7 @@ import Image from "next/image";
 import { CASE_STUDIES } from "@/contents/landing";
 
 import Capsule from "../shared/Capsule";
+import MultibenLogo from "../shared/MultibenLogo";
 
 export default function CaseStudiesSection() {
   return (
@@ -12,7 +13,7 @@ export default function CaseStudiesSection() {
           <Capsule text="Real-World Applications" variant="dark" />
 
           <h2 className="mx-auto mb-6 max-w-4xl text-4xl leading-tight font-semibold md:text-5xl">
-            Certified in Commercial and Industrial Heat Pump Manufacturing
+            Trusted <MultibenLogo size="medium" /> Heatpump Since 2012
           </h2>
           <p className="mx-auto max-w-2xl text-gray-400">
             See how our heat pump solutions transform energy efficiency in

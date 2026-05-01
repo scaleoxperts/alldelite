@@ -124,7 +124,7 @@ export default function ContactSection() {
                   <span className="material-icons-outlined">{info.icon}</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900">{info.title}</h3>
+                  <h3 className="font-bold text-gray-900">{info.title} </h3>
                   {info.value && (
                     <p className={`${info.valueClass} text-sm font-medium`}>
                       {info.value}

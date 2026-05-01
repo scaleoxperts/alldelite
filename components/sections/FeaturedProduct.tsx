@@ -14,11 +14,11 @@ const HIGHLIGHTS = [
   },
   {
     title: "Smart Control",
-    desc: "LCD digital controller, 25°C–60°C range",
+    desc: "LCD digital controller",
   },
   {
     title: "Durable Design",
-    desc: "Efficient heat exchanger, corrosion resistance, 50/60Hz support",
+    desc: "Efficient heat exchanger, corrosion resistance",
   },
 ];
 
@@ -102,7 +102,7 @@ export default function FeaturedProductSection() {
                 <span className="material-icons-outlined text-emerald-500">
                   download
                 </span>
-                R32 Refrigerant Brochure
+                Multiben Brochure
               </a>
             </div>
           </div>
