@@ -16,12 +16,12 @@ export const ENERGY_EFFICIENCY_FEATURES = [
     iconBg: "bg-gradient-accent-primary",
   },
   {
-    title: "Intelligent microprocessor-based temperature control (25°C–60°C)",
+    title: "Intelligent microprocessor-based temperature control",
     iconKey: "cpu",
     iconBg: "bg-gradient-accent-blue",
   },
   {
-    title: "Energy output up to 3-4.5x per unit of electricity",
+    title: "Energy output up to 3-5.5x per unit of electricity",
     iconKey: "trending-up",
     iconBg: "bg-gradient-accent-primary",
   },
