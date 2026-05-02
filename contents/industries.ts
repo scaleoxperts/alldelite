@@ -88,7 +88,7 @@ export const PROVEN_RESULTS = {
     },
     {
       value: "50,000+",
-      label: "Tones of CO2 Reduced",
+      label: "Tonnes of CO2 Reduced",
       subLabel: "Environmental Impact",
     },
   ],
