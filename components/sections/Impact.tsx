@@ -10,22 +10,54 @@ function formatNumber(num: number) {
   });
 }
 
+const METRIC_CONFIG = [
+  {
+    baseValue: IMPACT_METRICS[0].value,
+    growthPerSecond: 2.8,
+  },
+  {
+    baseValue: IMPACT_METRICS[1].value,
+    growthPerSecond: 0.35,
+  },
+  {
+    baseValue: IMPACT_METRICS[2].value,
+    growthPerSecond: 0.12,
+  },
+];
+
+const START_TIME = new Date("2026-05-01T00:00:00Z").getTime();
+
+const getInitialValues = () => {
+  if (typeof window === "undefined") {
+    return METRIC_CONFIG.map((m) => m.baseValue);
+  }
+
+  const now = Date.now();
+
+  const secondsPassed = (now - START_TIME) / 1000;
+
+  return METRIC_CONFIG.map((metric) => {
+    return metric.baseValue + secondsPassed * metric.growthPerSecond;
+  });
+};
+
 export default function ImpactSection() {
-  const [values, setValues] = useState<number[]>(
-    IMPACT_METRICS.map((m) => m.value)
-  );
+  const [values, setValues] = useState<number[]>(getInitialValues);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setValues((prev) =>
-        prev.map((val, i) => {
-          const factor = i === 0 ? 500 : i === 1 ? 50 : 30;
-          const randomIncrement = Math.random() * factor;
+    const calculateValues = () => {
+      const now = Date.now();
 
-          return val + randomIncrement;
-        })
-      );
-    }, 1500);
+      const secondsPassed = (now - START_TIME) / 1000;
+
+      const updatedValues = METRIC_CONFIG.map((metric) => {
+        return metric.baseValue + secondsPassed * metric.growthPerSecond;
+      });
+
+      setValues(updatedValues);
+    };
+
+    const interval = setInterval(calculateValues, 1000);
 
     return () => clearInterval(interval);
   }, []);
@@ -33,6 +65,7 @@ export default function ImpactSection() {
   return (
     <section className="relative border-t border-gray-800 py-20">
       <div className="absolute inset-0 bg-[url(/landing/industry.png)] bg-cover bg-center" />
+
       <div className="absolute inset-0 bg-linear-to-b from-black/70 via-emerald-900/70 to-black/90" />
 
       <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
@@ -53,7 +86,10 @@ export default function ImpactSection() {
                 </span>
               </div>
 
-              <div className="mb-2 text-4xl font-bold tracking-tight text-white">
+              <div
+                className="mb-2 text-4xl font-bold tracking-tight text-white"
+                suppressHydrationWarning
+              >
                 {formatNumber(values[index])}
               </div>
 
