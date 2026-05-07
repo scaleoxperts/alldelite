@@ -1,7 +1,7 @@
 "use client";
-
 import { useState } from "react";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -19,16 +19,24 @@ export default function Navbar() {
             <Link
               prefetch={true}
               href="/"
-              className="text-2xl font-bold tracking-tight text-gray-900"
+              className="flex items-center gap-2.5"
             >
-              All<span className="text-(--color-primary)">delite</span>
+              <Image
+                src="/shared/alldelite-logo.jpg"
+                alt="SK Alldelite logo"
+                width={100}
+                height={100}
+                className="h-9 w-auto object-contain"
+              />
+              <span className="text-2xl font-bold tracking-tight whitespace-nowrap text-gray-900">
+                SK All<span className="text-(--color-primary)">delite</span>
+              </span>
             </Link>
           </div>
 
           <div className="hidden items-center space-x-8 md:flex">
             {NAV_LINKS.map((link) => {
               const active = pathname === link.href;
-
               return (
                 <Link
                   prefetch={true}
@@ -71,7 +79,6 @@ export default function Navbar() {
           <div className="flex flex-col space-y-4">
             {NAV_LINKS.map((link) => {
               const active = pathname === link.href;
-
               return (
                 <Link
                   prefetch={true}
