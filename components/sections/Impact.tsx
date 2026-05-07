@@ -10,54 +10,37 @@ function formatNumber(num: number) {
   });
 }
 
-const METRIC_CONFIG = [
-  {
-    baseValue: IMPACT_METRICS[0].value,
-    growthPerSecond: 2.8,
-  },
-  {
-    baseValue: IMPACT_METRICS[1].value,
-    growthPerSecond: 0.35,
-  },
-  {
-    baseValue: IMPACT_METRICS[2].value,
-    growthPerSecond: 0.12,
-  },
-];
-
 const START_TIME = new Date("2026-05-01T00:00:00Z").getTime();
 
-const getInitialValues = () => {
-  if (typeof window === "undefined") {
-    return METRIC_CONFIG.map((m) => m.baseValue);
-  }
+const HOT_WATER_GROWTH_PER_SECOND = 8.5;
 
+const ENERGY_SAVED_GROWTH_PER_SECOND = 2.8;
+
+const CO2_PER_KWH = 0.9;
+
+const calculateValues = () => {
   const now = Date.now();
 
   const secondsPassed = (now - START_TIME) / 1000;
 
-  return METRIC_CONFIG.map((metric) => {
-    return metric.baseValue + secondsPassed * metric.growthPerSecond;
-  });
+  const hotWaterGenerated =
+    IMPACT_METRICS[0].value + secondsPassed * HOT_WATER_GROWTH_PER_SECOND;
+
+  const energySaved =
+    IMPACT_METRICS[1].value + secondsPassed * ENERGY_SAVED_GROWTH_PER_SECOND;
+
+  const carbonOffset = energySaved * CO2_PER_KWH;
+
+  return [hotWaterGenerated, energySaved, carbonOffset];
 };
 
 export default function ImpactSection() {
-  const [values, setValues] = useState<number[]>(getInitialValues);
+  const [values, setValues] = useState<number[]>(() => calculateValues());
 
   useEffect(() => {
-    const calculateValues = () => {
-      const now = Date.now();
-
-      const secondsPassed = (now - START_TIME) / 1000;
-
-      const updatedValues = METRIC_CONFIG.map((metric) => {
-        return metric.baseValue + secondsPassed * metric.growthPerSecond;
-      });
-
-      setValues(updatedValues);
-    };
-
-    const interval = setInterval(calculateValues, 1000);
+    const interval = setInterval(() => {
+      setValues(calculateValues());
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
