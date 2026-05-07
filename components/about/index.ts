@@ -10,3 +10,4 @@ export { default as ProductRangeSection } from "./ProductRange.about";
 export { default as LocationSection } from "./Location.about";
 export { default as CTASection } from "./CTA.about";
 export { default as CertificateSection } from "./Certificate.about";
+export { default as MembershipsSection } from "./Membership.about";
