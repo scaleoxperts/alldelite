@@ -19,12 +19,12 @@ export default function HeroSection() {
         </div>
 
         <h1 className="mb-5 text-6xl font-bold tracking-tight md:text-7xl">
-          Export Operations
+          Elite Customers
         </h1>
 
         <p className="mx-auto mb-14 max-w-2xl text-lg leading-relaxed font-light text-gray-300">
-          Expanding sustainable heat pump solutions to international markets
-          through strategic partnerships
+          Our portfolio of elite customers reflects a strong legacy of trust,
+          quality delivery, and long-term partnerships across diverse sectors.
         </p>
 
         <div className="grid w-full max-w-2xl grid-cols-3 gap-4">
