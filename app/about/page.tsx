@@ -4,6 +4,7 @@ import {
   HeroSection,
   HowItWorksSection,
   LocationSection,
+  MembershipsSection,
   MissionSection,
   MultiBenHybridSection,
   ProductRangeSection,
@@ -39,6 +40,7 @@ export default function AboutPage() {
         <ProductRangeSection />
         <LocationSection />
         <CertificateSection />
+        <MembershipsSection />
         <CTASection />
       </main>
       <Footer />
