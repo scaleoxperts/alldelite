@@ -5,6 +5,7 @@ import {
   PartnershipCTASection,
   RoadmapSection,
   SingaporeSection,
+  TrustedBySection,
 } from "@/components/export";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
@@ -17,6 +18,7 @@ export default function ExportPage() {
       <Navbar />
       <main>
         <HeroSection />
+        <TrustedBySection />
         <IntroducingSection />
         <SingaporeSection />
         <GlobalGoalsSection />
