@@ -1,4 +1,4 @@
-import { Calendar, Globe, MapPin } from "lucide-react";
+import { Globe, MapPin } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -23,25 +23,25 @@ export default function HeroSection() {
         </h1>
 
         <p className="mx-auto mb-14 max-w-2xl text-lg leading-relaxed font-light text-gray-300">
-          Our portfolio of elite customers reflects a strong legacy of trust,
-          quality delivery, and long-term partnerships across diverse sectors.
+          Expanding sustainable heat pump solutions to international markets
+          through strategic partnerships
         </p>
 
         <div className="grid w-full max-w-2xl grid-cols-3 gap-4">
           {[
             {
-              icon: <Calendar className="h-6 w-6 text-[#00a884]" />,
-              value: "2026-27",
+              icon: <MapPin className="h-6 w-6 text-[#00a884]" />,
+              value: "Hospitality",
               label: "Launch Year",
             },
             {
               icon: <MapPin className="h-6 w-6 text-[#00a884]" />,
-              value: "Singapore",
+              value: "Industries",
               label: "First Partner",
             },
             {
-              icon: <Globe className="h-6 w-6 text-[#00a884]" />,
-              value: "Global",
+              icon: <MapPin className="h-6 w-6 text-[#00a884]" />,
+              value: "Apartments",
               label: "Vision",
             },
           ].map((stat) => (
@@ -53,7 +53,7 @@ export default function HeroSection() {
               {stat.icon}
               <div className="text-2xl font-bold text-white">{stat.value}</div>
               <div className="text-xs font-medium text-gray-400">
-                {stat.label}
+                {/* {stat.label} */}
               </div>
             </div>
           ))}

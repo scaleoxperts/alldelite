@@ -11,7 +11,7 @@ export default function HowItWorksSection() {
       <div className="mx-auto max-w-7xl px-5">
         <Capsule text="Product" variant="dark" />
 
-        <h2 className="mb-4 text-4xl font-bold md:text-5xl">
+        <h2 className="mb-4 text-2xl font-bold sm:text-3xl md:text-4xl">
           How <MultibenLogo /> Heat Pump Works
         </h2>
         <p className="mx-auto mb-12 max-w-xl text-sm text-gray-400">
