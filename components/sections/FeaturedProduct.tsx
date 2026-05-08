@@ -42,8 +42,7 @@ export default function FeaturedProductSection() {
         <div className="mb-12 text-center">
           <Capsule text="Advanced Technology" />
           <h2 className="mb-6 text-4xl font-bold text-gray-900">
-            {MultibenLogo({ size: "large" })} Commercial Heat Pump (Hot Water
-            Generation)
+            <MultibenLogo /> Commercial Heat Pump (Hot Water Generation)
           </h2>
           <p className="mx-auto max-w-3xl leading-relaxed text-gray-600">
             This heat pump features a world-class scroll compressor for
