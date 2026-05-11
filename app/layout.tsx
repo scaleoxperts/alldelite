@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
+import WhatsAppButton from "@/components/shared/WhatsappButton";
+
 import "./globals.css";
 
 const inter = Inter({
@@ -33,6 +35,7 @@ export default function RootLayout({
         className={`${inter.variable} font-body bg-background-light dark:bg-background-dark text-gray-900 transition-colors duration-200 dark:text-gray-100`}
       >
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );
