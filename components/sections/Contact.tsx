@@ -141,7 +141,10 @@ export default function ContactSection() {
                 Our emergency support team is available 24/7 for existing
                 clients
               </p>
-              <button className="w-full rounded-lg bg-white py-2 text-sm font-bold text-(--color-primary) transition hover:bg-gray-50">
+              <button
+                className="w-full rounded-lg bg-white py-2 text-sm font-bold text-(--color-primary) transition hover:cursor-pointer hover:bg-gray-50"
+                onClick={() => (window.location.href = `tel:+919550216000}`)}
+              >
                 Call Emergency Line
               </button>
             </div>
