@@ -49,13 +49,14 @@ export default function GroundSourceSection() {
                 <span className="font-bold text-(--color-primary)">
                   Best For:
                 </span>{" "}
-                Large-scale commercial or industrial applications requiring
-                environmentally responsible heating
+                Large Buildings like club house to Villas for Cooling.
+                Commercial and Industrial applications requiring environmentally
+                responsible Cooling
               </p>
             </div>
           </div>
 
-          <div className="h-180">
+          <div className="h-180 overflow-hidden">
             <img
               src="/products/ground-source-system.png"
               alt="Ground Source Heat Pump Installation"

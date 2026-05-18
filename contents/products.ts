@@ -92,9 +92,9 @@ export const GROUND_SOURCE_HEAT_PUMPS = {
     Icon: Globe,
     title: "Underground Energy",
     description:
-      "These systems extract heat from the ground, providing highly efficient and consistent heating performance for long-term energy savings.",
+      "These systems transfer heat to the ground, providing highly efficient and consistent Cooling performance for long-term energy savings.",
     stats: [
-      { Icon: Thermometer, label: "Stable Underground Heat" },
+      { Icon: Thermometer, label: "Stable Underground Temperature" },
       { Icon: Activity, label: "Consistent Performance" },
       { Icon: TrendingDown, label: "Long-term Savings" },
       { Icon: Droplets, label: "Eco-Friendly" },
